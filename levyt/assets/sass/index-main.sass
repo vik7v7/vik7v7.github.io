@@ -1,0 +1,79 @@
+@import "main"
+.man-page
+	height: 90vh
+
+//Header
+
+//Nav
+nav
+	margin: 50px 0
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 20px
+			a
+				font-size: 16px
+				color: #fff
+				text-transform: uppercase
+				text-align: center
+				font-weight: 300
+				transition: .3s
+				&:hover
+					color: $akcent
+					text-decoration: none
+				&:active
+					color: #fff
+					text-decoration: none
+
+
+//BOX
+.box
+	width: 395px
+	height: 395px
+	border: 11px solid #fff
+	padding: 80px 43px
+	position: absolute
+	left: 50%
+	margin-left: -197.5px
+	z-index: 1
+	color: #fff
+	text-align: center
+	font-weight: 700
+	text-transform: uppercase
+	cursor: pointer
+	&:hover
+		.line
+			width: 300px
+			margin-left: -150px
+	h1
+		margin: 0
+		padding: 0
+		
+		font-size: 87px
+	p
+		margin: 0
+		margin-top: -12px
+		padding: 0
+		font-size: 32px
+		line-height: 45px
+	.line
+		height: 11px
+		background: $akcent
+		width: 170px
+		position: absolute
+		left: 50%
+		margin-left: -85px
+		bottom: -11px
+		transition: .3s
+
+//footer
+footer
+	background: url('../img/bg-yellow.png')
+	width: 100%
+	position: fixed
+	bottom: 0
+	z-index: -1

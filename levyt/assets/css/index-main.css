@@ -1,0 +1,117 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700';
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  background: url("../img/bg-blue.png");
+  letter-spacing: 0.2px;
+  background-position: center -150px; }
+
+.hidden {
+  display: none; }
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+::-webkit-scrollbar {
+  width: 5px; }
+
+::-webkit-scrollbar-track {
+  background-color: #ccc; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f7a417; }
+
+::selection {
+  background: #f7a417; }
+
+::-moz-selection {
+  background: #f7a417; }
+
+.man-page {
+  height: 90vh; }
+
+nav {
+  margin: 50px 0; }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center; }
+    nav ul li {
+      display: inline-block;
+      margin: 0 20px; }
+      nav ul li a {
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 300;
+        transition: 0.3s; }
+        nav ul li a:hover {
+          color: #ffe400;
+          text-decoration: none; }
+        nav ul li a:active {
+          color: #fff;
+          text-decoration: none; }
+
+.box {
+  width: 395px;
+  height: 395px;
+  border: 11px solid #fff;
+  padding: 80px 43px;
+  position: absolute;
+  left: 50%;
+  margin-left: -197.5px;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .box:hover .line {
+    width: 300px;
+    margin-left: -150px; }
+  .box h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 87px; }
+  .box p {
+    margin: 0;
+    margin-top: -12px;
+    padding: 0;
+    font-size: 32px;
+    line-height: 45px; }
+  .box .line {
+    height: 11px;
+    background: #ffe400;
+    width: 170px;
+    position: absolute;
+    left: 50%;
+    margin-left: -85px;
+    bottom: -11px;
+    transition: 0.3s; }
+
+footer {
+  background: url("../img/bg-yellow.png");
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: -1; }
