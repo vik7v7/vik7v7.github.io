@@ -26,6 +26,12 @@
     .about .text p {
       line-height: 25px;
       font-size: 13px; } }
+@media only screen and (min-height: 927px) {
+  footer {
+    position: fixed; } }
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
+  footer {
+    position: inherit; } }
 @media only screen and (max-width: 500px) {
   .icon-menu {
     display: block !important; }
@@ -41,7 +47,7 @@
         nav ul li a {
           font-size: 18px; }
 
-  .about {
+  .contact {
     margin-top: 20px; } }
 @media only screen and (min-width: 500px) {
   nav ul {

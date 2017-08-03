@@ -52,6 +52,15 @@ body {
 
 nav {
   margin: 50px 0; }
+  nav .icon-menu {
+    display: none;
+    margin-top: 28px;
+    margin-left: 28px;
+    cursor: pointer;
+    position: relative;
+    right: 0; }
+    nav .icon-menu img {
+      width: 30px; }
   nav ul {
     margin: 0;
     padding: 0;
@@ -68,7 +77,7 @@ nav {
         font-weight: 300;
         transition: 0.3s; }
         nav ul li a:hover {
-          color: #ffe400;
+          color: #febf13;
           text-decoration: none; }
         nav ul li a:active {
           color: #fff;
@@ -82,7 +91,7 @@ nav {
     background: #fff;
     padding: 40px 90px; }
     .about .text h1 {
-      color: #ffe400;
+      color: #febf13;
       text-align: center;
       margin-top: 0;
       text-transform: uppercase; }

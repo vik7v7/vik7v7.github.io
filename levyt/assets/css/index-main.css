@@ -66,7 +66,7 @@ nav {
         font-weight: 300;
         transition: 0.3s; }
         nav ul li a:hover {
-          color: #ffe400;
+          color: #febf13;
           text-decoration: none; }
         nav ul li a:active {
           color: #fff;
@@ -101,7 +101,7 @@ nav {
     line-height: 45px; }
   .box .line {
     height: 11px;
-    background: #ffe400;
+    background: #febf13;
     width: 170px;
     position: absolute;
     left: 50%;
