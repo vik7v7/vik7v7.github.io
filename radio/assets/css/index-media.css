@@ -102,7 +102,10 @@
     position: absolute;
     bottom: 25px;
     left: 50%;
-    margin-left: -17.5px; } }
+    margin-left: -17.5px; }
+
+  .page {
+    padding: 45px 40px; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 550px) {
   .logo img {
@@ -115,7 +118,11 @@
     font-size: 18px; }
 
   .mouse {
-    display: none; } }
+    display: none; }
+
+  .page {
+    padding: 45px 30px;
+    line-height: 25px; } }
 @media only screen and (max-width: 500px) {
   nav {
     padding-top: 27px; }
@@ -134,7 +141,13 @@
     font-size: 40px;
     margin-top: 10%; }
   .heading h2 {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  .page {
+    padding: 35px 20px; }
+    .page h1 {
+      line-height: 35px;
+      margin-top: -10px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   /* */ }
