@@ -1,0 +1,67 @@
+@import "main"
+body
+	background-size: cover
+	background-attachment: fixed
+	background-position: center center
+//Nav
+nav
+	margin: 50px 0
+	.icon-menu
+		display: none
+		margin-top: 28px
+		margin-left: 28px
+		cursor: pointer
+		position: relative
+		right: 0
+		img
+			width: 30px
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 20px
+			a
+				font-size: 16px
+				color: #fff
+				text-transform: uppercase
+				text-align: center
+				font-weight: 300
+				transition: .3s
+				&:hover
+					color: $akcent
+					text-decoration: none
+				&:active
+					color: #fff
+					text-decoration: none
+
+
+//main
+.about
+	margin-bottom: 70px
+	.photo
+		img
+			width: 100%
+	.text
+		background: #fff
+		padding: 40px 90px
+		h1
+			color: $akcent
+			text-align: center
+			margin-top: 0
+			text-transform: uppercase
+		p
+			line-height: 30px
+			color: #222222
+
+
+//footer
+footer
+	background: url('../img/bg-yellow.png')
+	width: 100%
+	position: fixed
+	bottom: 0
+	z-index: -1
+	height: 150px
