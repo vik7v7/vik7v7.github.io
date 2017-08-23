@@ -106,13 +106,16 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 550px) {
   .logo img {
-    display: none; }
+    margin-top: 10%; }
 
   .heading h1 {
     margin-top: 2%;
     font-size: 50px; }
   .heading h2 {
-    font-size: 18px; } }
+    font-size: 18px; }
+
+  .mouse {
+    display: none; } }
 @media only screen and (max-width: 500px) {
   nav {
     padding-top: 27px; }
