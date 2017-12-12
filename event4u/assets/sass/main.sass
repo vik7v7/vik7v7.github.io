@@ -1,0 +1,1307 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800&subset=cyrillic')
+
+$ak: #fdbc4b
+$ccc: #f3f3f3
+
+::-webkit-scrollbar 
+    width: 7px
+
+::-webkit-scrollbar-track 
+    background-color: #ccc
+
+::-webkit-scrollbar-thumb 
+    background-color: $ak
+
+::selection
+	background: #ccc
+
+::-moz-selection
+	background: #ccc
+
+*
+	&::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
+		color: #666
+		opacity: 1
+
+body
+	input:focus:required:invalid, textarea:focus:required:invalid, input:required:valid, textarea:required:valid
+
+html.js
+	.loader
+		background: none repeat scroll 0 0 #ffffff
+		bottom: 0
+		height: 100%
+		left: 0
+		position: fixed
+		right: 0
+		top: 0
+		width: 100%
+		z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: sans-serif
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: 'Open Sans', sans-serif
+	overflow-x: hidden
+	background: #f3f3f3
+	color: #2d2d2d
+	
+a
+	color: $ak
+	&:hover
+		text-decoration: none
+	&:visited
+		text-decoration: none
+		color: $ak
+	&:link
+		text-decoration: none
+		color: $ak
+	&:active
+		text-decoration: none
+		color: $ak
+
+h2
+	font-size: 33px
+	text-transform: uppercase
+	font-weight: 700 
+	border-bottom: 3px solid $ak
+	display: inline-block
+	line-height: 45px
+	margin-bottom: 20px
+
+.heading-h2
+	text-align: center
+	p
+		width: 500px
+		margin: auto
+		font-size: 14px
+		line-height: 26px 
+
+.hidden
+	display: none
+	
+.line-white-top
+	background-image: url("../img/line-white-top.png")
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-position: center center
+	height: 50px
+
+.line-white-bottom
+	background-image: url("../img/line-white-bottom.png")
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-position: center center
+	height: 50px 
+	
+.line-ccc-bottom
+	background-image: url("../img/line-ccc-bottom.png")
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-position: center center
+	height: 50px 
+
+//HEADER
+	
+//NAV
+nav
+	position: absolute
+	z-index: 2
+	width: 100%
+	height: 60px
+	background-color: #313844 
+
+#cssmenu
+	ul
+		list-style: none
+		margin-top: 20px 
+		li.has-sub 
+			> a 
+				&:after 
+					position: absolute
+					z-index: 5
+					display: block
+					transition: all 0.1s ease-out
+				&:before 
+					position: absolute
+					display: block
+					transition: all 0.1s ease-out
+	ul
+		padding: 0
+		text-align: right
+		.has-sub
+			cursor: pointer
+			position: relative
+			margin-right: 7px
+			img
+				position: absolute
+				left: 93%
+				top: 42%
+		li
+			display: inline-block
+			margin-left: 0px
+			text-transform: uppercase
+			margin-left: 20px
+			a
+				text-decoration: none
+				color: $ak
+				border: 2px solid transparent
+				font-size: 15px
+				letter-spacing: .3px
+				transition: .3s
+				&:hover
+					color: #FFF 
+			ul
+				display: none
+				position: absolute
+				width: 280px
+				padding: 0
+				margin-top: 18px
+				z-index: 2
+				margin-left: 0
+				padding: 5px
+				text-align: left
+				background: $ak
+				.has-sub
+					margin-right: 0
+				li
+					display: block
+					list-style: none
+					margin-left: 0
+					a
+						padding: 5px 10px 3px 10px
+						font-size: 14px
+						color: #fff 
+						&:hover
+							font-weight: 400
+							transition: .3s
+					ul
+						position: inherit
+						margin-top: 0
+						width: 100%
+						padding-left: 20px
+						li
+							border: 0
+							&:hover
+								transition: .3s
+							a
+								color: #ffc600 !important
+								font-weight: 500
+								padding: 5px 10px 3px 10px
+								border-radius: 5px
+								font-size: 12px
+								&:hover
+									color: #000 !important
+									background: #ffdc17
+									transition: .3s
+				a
+					font-size: 18px
+					display: block
+					-webkit-transition: all 0.25s ease
+					-o-transition: all 0.25s ease
+					transition: all 0.25s ease
+		li:nth-child(1)
+			margin-left: 0
+
+.align-right 
+	float: right
+
+.icon-menu
+	position: relative
+	border: none
+	background: transparent
+	margin-top: 23px
+	left: 100%
+	margin-left: -20px
+	outline: none
+	cursor: pointer
+	width: 22px
+	height: 18px
+	background: url('../img/bars.png')
+
+.logo
+	margin-top: 20px
+	
+
+.header-bg
+	background-image: url('../img/header-bg.png')
+	background-position: center center
+	height: 640px
+	clip-path: polygon(0 0, 100% 0, 100% 96%, 50% 100%, 0 96%)
+
+.heading-header
+	padding-top: 80px 
+	text-align: center
+	p
+		color: #FFF
+		font-style: italic
+	img
+		margin-bottom: 20px
+		margin-top: -5px 
+
+h1
+	font-size: 60px
+	line-height: 73px 
+	color: #FFF
+	text-transform: uppercase
+
+.col-centered
+  margin: 0 auto
+  float: inherit
+
+
+.scroll-downs
+  margin: auto
+  width: 34px
+  height: 55px
+  margin-top: 45px 
+
+.mousey
+  width: 3px
+  padding: 7px 11px 5px 11px
+  height: 30px
+  border: 2px solid $ak
+  border-radius: 25px
+  opacity: 0.75
+  box-sizing: content-box
+
+.scroller
+  width: 2px
+  height: 10px
+  border-radius: 25%
+  background-color: #fff
+  animation-name: scroll
+  animation-duration: 1.5s
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94)
+  animation-iteration-count: infinite
+  
+@keyframes scroll
+  0%
+    opacity: 0
+
+  10%
+    transform: translateY(0)
+    opacity: 1
+
+  100%
+    transform: translateY(15px)
+    opacity: 0
+    
+
+
+//platform
+
+.platform
+	padding: 20px 0 0 0
+	background-color: $ccc
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+		li
+			display: inline-block
+	
+.item-platform
+	width: 360px
+	height: 390px
+	border: 5px solid $ak
+	background-position: center center
+	background-size: cover
+	display: inline-block
+	float: left
+	margin: 13px
+	color: #FFF
+	padding: 30px
+	transition: .3s
+	cursor: pointer
+	h3
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 700
+		line-height: 40px
+		margin-bottom: 20px
+		font-size: 22px
+		display: table-cell
+		vertical-align: middle
+		width: 100%
+		text-align: center
+	p
+		font-size: 14px
+		height: 160px
+		overflow: hidden
+	.platform-button
+		background-color: $ak
+		transition: .3s
+		border: 1px solid $ak
+		text-align: center
+		color: #FFF 
+		padding: 7px 0 5px 0
+		text-transform: uppercase
+		display: block
+		margin-top: 20px 
+		&:hover
+			border: 1px solid #fff
+	.item-platform-text
+		transition: .3s
+		display: table
+		width: 100%
+		height: 100%
+		.text-hidd
+			display: none
+	&:hover
+		h3
+			text-align: left 
+		.item-platform-text
+			.text-hidd
+				display: table-row
+				
+
+
+//coock
+.owl-nav
+	display: block !important
+	.owl-prev
+		width: 26px
+		height: 45px
+		background: url(../img/arrow-left.png)
+		top: 125px
+		position: absolute
+		left: -50px
+	.owl-next
+		width: 26px
+		height: 45px
+		background: url(../img/arrow-left.png)
+		transform: scale(-1, 1)
+		top: 125px
+		right: 0
+		position: absolute
+		right: -50px
+
+.coock
+	background-color: #FFF
+	padding-bottom: 10px 
+	.owl-item
+		text-align: center
+
+.owl-coock
+	margin-top: 20px
+	margin-bottom: 30px
+	a
+		display: inline-block
+
+.item-coock
+	width: 320px
+	.photo
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover
+		background-position: center center
+		width: 100%
+		height: 250px
+		position: relative 
+		.plus
+			position: absolute
+			top: 0
+			width: 290px
+			height: 220px
+			border: 3px solid $ak
+			margin: 15px
+			display: none 
+			p
+				display: table-cell
+				vertical-align: middle
+				width: 100%
+				text-align: center
+				font-size: 50px
+				color: $ak
+				font-weight: 700 
+	.photo-hover
+		background-color: #000
+		opacity: .3
+		height: 100% 
+		width: 100%
+		display: none 
+	.text
+		height: 45px
+		width: 100%
+		color: #FFF 
+		background-color: $ak
+		text-align: center
+		font-style: italic
+		p
+			margin: 0
+			padding: 0
+			padding-top: 11px
+	&:hover
+		.photo-hover
+			display: block 
+		.plus
+			display: table
+
+.bottom
+	text-align: center 		
+
+.bottom-coock
+	font-weight: 700
+	text-align: center
+	border: 2px solid $ak
+	color: #464646 !important
+	padding: 10px 30px
+	-webkit-transition: .3s
+	-moz-transition: .3s
+	-ms-transition: .3s
+	-o-transition: .3s
+	transition: .3s
+	line-height: 55px 
+	&:hover
+		color: #fff !important
+		background-color: $ak
+		
+
+.mfp-zoom-in
+	.mfp-with-anim
+		opacity: 0
+		transition: all 0.2s ease-in-out
+		transform: scale(0.8)
+	&.mfp-bg
+		opacity: 0
+		transition: all 0.3s ease-out
+	&.mfp-ready
+		.mfp-with-anim
+			opacity: 1
+			transform: scale(1)
+	&.mfp-bg
+		opacity: 0.8
+	&.mfp-removing
+		.mfp-with-anim
+			transform: scale(0.8)
+			opacity: 0
+	&.mfp-bg
+		opacity: 0
+		
+.form-call
+	background: #ccc
+	position: relative
+	background: #F8F8F8
+	padding: 10px 35px 35px 35px
+	width: auto
+	max-width: 500px
+	margin: 0 auto
+	h3
+		text-align: center
+		color: $ak
+		text-transform: uppercase
+		font-size: 25px 
+	input.tour-book2
+		outline: none
+		display: block
+		width: 100%
+		border: 1px solid #ccc
+		border-radius: 3px
+		margin: 0 0 20px
+		padding: 10px 15px
+		box-sizing: border-box
+		font-weight: 400
+		color: #000 !important
+		&:focus
+			border: 1px solid $ak
+			color: $ak
+	label
+	    margin-left: 10px
+	    color: #606060
+	    font-weight: 300
+	    font-style: italic
+	    font-size: 14px
+
+.tour_send2
+	border: 1px solid $ak
+	padding: 8px 45px
+	color: $ak
+	background: #fff
+	border-radius: 3px
+	outline: none
+	&:hover
+		background: $ak
+		color: #fff
+		transition: 0.3s
+    
+.b-modal
+	position: relative
+	width: 100%
+	background: transparent
+	border-radius: none
+	border: none
+	color: #fff !important
+	text-align: center !important
+	background: $ak
+	padding: 30px 70px
+
+.arcticmodal-container
+	z-index: 9999
+	
+	
+
+
+//BANKET ROOM
+
+.banket-room
+	background-color: $ccc
+	.heading-h2
+		margin-top: 10px 
+	.owl-item
+		text-align: center
+		padding-bottom: 10px 
+
+.owl-banket-room
+	margin-top: 20px
+	margin-bottom: 30px
+	a
+		display: inline-block
+	.owl-nav
+		.owl-prev	
+			top: 158px
+			left: -50px
+		.owl-next
+			top: 158px
+			right: -50px
+
+.item-banket-room
+	width: 490px
+	border: 5px solid #fff 
+	.photo
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover
+		background-position: center center
+		width: 100%
+		height: 350px
+		position: relative 
+		.plus
+			position: absolute
+			top: 0
+			width: 450px
+			height: 320px
+			border: 3px solid $ak
+			margin: 15px
+			display: none 
+			p
+				display: table-cell
+				vertical-align: middle
+				width: 100%
+				text-align: center
+				font-size: 50px
+				color: $ak
+				font-weight: 700 
+	.photo-hover
+		background-color: #000
+		opacity: .5
+		height: 100% 
+		width: 100%
+		display: none 
+	&:hover
+		.photo-hover
+			display: block 
+		.plus
+			display: table
+			
+
+//register
+
+.register
+	background-color: #fff
+	padding-bottom: 10px 
+	.owl-item
+		text-align: center
+
+.owl-register
+	margin-top: 20px
+	margin-bottom: 30px
+	a
+		display: inline-block
+
+.item-register
+	width: 320px
+	.photo
+		-webkit-background-size: cover 
+		-o-background-size: cover 
+		background-size: cover
+		background-position: center center
+		width: 100%
+		height: 250px
+		position: relative 
+		.plus
+			position: absolute
+			top: 0
+			width: 290px
+			height: 220px
+			border: 3px solid $ak
+			margin: 15px
+			display: none
+			p
+				display: table-cell
+				vertical-align: middle
+				width: 100%
+				text-align: center
+				font-size: 50px
+				color: $ak
+				font-weight: 700 
+	.photo-hover
+		background-color: #000
+		opacity: .5
+		height: 100% 
+		width: 100%
+		display: none 
+	&:hover
+		.photo-hover
+			display: block 
+		.plus
+			display: table
+			
+.sertyficat
+	position: relative
+
+.bg-sertyficat
+	background-image: url("../img/sertyficat.png")
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-position: center center
+	height: 520px
+	padding: 115px 0
+	
+.bg-fff
+	position: absolute
+	top: 0
+	background-color: #FFF
+	height: 50px
+	width: 100% 
+	z-index: -1 
+	
+.sert
+	color: #FFF
+	text-align: center
+	background-color: #383838
+	width: 600px
+	margin: 0 auto
+	-webkit-border-radius: 10px 
+	border-radius: 10px
+	padding: 20px
+	h3
+		font-size: 40px
+		text-transform: uppercase
+		margin: 10px
+	p
+		font-style: italic
+		padding: 0 30px
+		height: 90px
+		overflow: hidden
+	.botton
+		border: 2px solid $ak
+		-webkit-border-radius: 100px 
+		border-radius: 100px
+		padding: 10px 40px
+		font-weight: 700 
+		-webkit-transition: .3s
+		-moz-transition: .3s
+		-ms-transition: .3s
+		-o-transition: .3s
+		transition: .3s
+		text-transform: uppercase
+		margin: 5px 0
+		display: inline-block 
+		&:hover
+			background-color: $ak
+			color: #FFF !important
+			
+
+//DETAL
+.detal
+	background-color: $ccc
+	padding-bottom: 30px 
+	.heading-h2
+		margin-top: 10px
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+		li
+			display: inline-block
+	.item-detal
+		width: 270px
+		overflow: hidden
+		height: 407px
+		.poligon img
+			top: 2px /* equal to border thickness */
+			left: 2px /* equal to border thickness */
+			width: 260px /* container height - (border thickness * 2) */
+			height: 260px /* container height - (border thickness * 2) */
+			-webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+			-moz-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%)
+		h3
+			font-size: 16px
+			text-transform: uppercase
+			border-bottom: 2px solid $ak
+			display: inline-block
+			line-height: 22px
+			margin: 0
+			margin-bottom: 5px 
+		p
+			font-style: italic
+			padding: 0 20px
+			line-height: 26px 
+			
+
+//MAIL
+.mail
+	position: relative
+	.bg-fff
+		top: 100%
+		position: absolute
+		margin-top: -50px
+
+.bg-mail
+	background-image: url("../img/mail-bg.png")
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-position: center center
+	height: 460px
+	padding: 90px 0
+	.heading-h2
+		h2
+			color: #FFF 
+	form
+		width: 300px
+		margin: 30px auto
+		input
+			outline: none
+			display: block
+			width: 100%
+			border: 1px solid #fff
+			border-radius: 3px
+			margin: 0 0 20px
+			padding: 10px 15px
+			box-sizing: border-box
+			font-weight: 400
+			color: #fff !important
+			background: transparent
+			&:focus
+				border: 1px solid $ak
+				color: $ak
+			&:-moz-placeholder
+				color: #FFF
+				font-style: italic 
+			&::-webkit-input-placeholder
+				color: #FFF
+				font-style: italic
+		.tour_send2
+			border: 1px solid $ak
+			padding: 8px 45px
+			color: #fff
+			background: $ak
+			border-radius: 3px
+			outline: none
+			&:hover
+				background: #fff
+				color: $ak !important
+				transition: 0.3s
+				border: 1px solid $ak
+				
+
+//NEWS
+.news
+	background-color: #FFF
+	padding-bottom: 30px 
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+		li
+			display: inline-block
+
+.item-news
+	width: 350px
+	height: 390px
+	background-position: center center
+	background-size: cover
+	position: relative 
+	float: left
+	margin: 13px
+	color: #FFF
+	padding: 30px
+	transition: .3s
+	cursor: pointer
+	.item-platform-text
+		transition: .3s
+		display: table
+		width: 100%
+		height: 100%
+	h3
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 700
+		line-height: 40px
+		margin-bottom: 20px
+		font-size: 22px
+		display: table-cell
+		vertical-align: middle
+		width: 100%
+		text-align: center
+		-webkit-transition: .3s
+		-moz-transition: .3s
+		-ms-transition: .3s
+		-o-transition: .3s
+		transition: .3s
+	.data
+		position: absolute
+		background-color: $ak
+		color: #FFF 
+		padding: 5px 15px
+		top: 10px
+		right: -7px  
+	&:hover
+		h3
+			color: $ak 
+
+
+//DOP-USLUGI
+
+.dop-uslugi
+	position: relative
+	.bg-fff
+		position: absolute
+		top: 0
+	
+.bg-dop-uslugi
+	background-image: url("../img/dop-uslugi.png")
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-position: center center
+	height: 385px
+	padding: 80px 0
+	.heading-h2
+		h2
+			color: #FFF
+		p
+			color: #FFF
+			height: 76px
+			overflow: hidden
+			
+.bottom-dop-uslugi
+	font-weight: 700
+	text-align: center
+	border: 2px solid $ak
+	color: #fff !important
+	padding: 10px 30px 8px 30px
+	-webkit-transition: .3s
+	-moz-transition: .3s
+	-ms-transition: .3s
+	-o-transition: .3s
+	transition: .3s
+	background-color: $ak
+	text-transform: uppercase
+	display: inline-block
+	margin-top: 15px 
+	&:hover
+		border: 2px solid #fff
+		
+
+//advantages
+.advantages
+	background-color: $ccc
+	padding-bottom: 30px 
+	.heading-h2
+		margin-top: 20px
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+		li
+			display: inline-block
+	.item-advantages
+		width: 270px
+		overflow: hidden
+		height: 200px
+		margin: 20px 0
+		img
+			text-align: center 
+		h3
+			font-size: 16px
+			text-transform: uppercase
+			display: inline-block
+			line-height: 22px
+			margin: 0
+			margin-bottom: -5px
+			margin-top: 25px 
+		p
+			font-style: italic
+			padding: 0 20px
+			line-height: 26px
+			
+//VILLA
+.dop-villa
+	position: relative
+	.bg-ccc
+		position: absolute
+		top: 0
+	.bg-fff
+		position: absolute
+		top: 100%
+		margin-top: -50px 
+	
+.bg-dop-villa
+	background-image: url("../img/villa.png")
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-position: center center
+	height: 385px
+	padding: 80px 0
+	.heading-h2
+		h2
+			color: #FFF
+		p
+			color: #FFF
+			height: 76px
+			overflow: hidden
+
+
+//COMMAND
+.command
+	background-color: #FFF
+	.heading-h2
+		margin-top: 20px 
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+		li
+			display: inline-block
+			margin: 0 50px 
+	.item-command
+		width: 270px
+		overflow: hidden
+		height: 355px
+		margin: 20px 0
+		.circle
+			height: 270px
+			width: 270px
+			-webkit-border-radius: 50% 
+			border-radius: 50%
+			background-position: center center
+			-webkit-background-size: cover 
+			-o-background-size: cover 
+			background-size: cover 
+		h3
+			font-size: 16px
+			text-transform: uppercase
+			display: inline-block
+			line-height: 22px
+			margin: 0
+			margin-bottom: -5px
+			margin-top: 25px 
+		p
+			font-style: italic
+			padding: 0 20px
+			line-height: 26px
+			margin-top: 5px
+			
+//partners
+.partners
+	background-color: #FFF
+	padding-bottom: 10px 
+	.owl-item
+		text-align: center
+	.owl-nav
+		display: block !important
+		.owl-prev	
+			top: 67px
+			left: -50px
+		.owl-next
+			top: 67px
+			right: -50px
+
+.owl-partners
+	margin-bottom: -20px
+	a
+		display: inline-block
+		width: 225px
+		height: 180px
+		.item-partners
+			text-align: center
+			display: table
+			width: 100%
+			height: 100%
+			p
+				display: table-cell
+				vertical-align: middle 
+				img
+					padding: 0 30px
+					width: inherit
+					max-width: 100%
+					&:hover
+						opacity: .8 
+					
+
+//blog
+.blog
+	background-color: $ccc
+	padding-bottom: 30px 
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+		li
+			display: inline-block
+
+.item-blog
+	width: 350px
+	height: 390px
+	background-position: center center
+	background-size: cover
+	position: relative 
+	float: left
+	margin: 13px
+	color: #FFF
+	padding: 30px
+	transition: .3s
+	cursor: pointer
+	.item-platform-text
+		transition: .3s
+		display: table
+		width: 100%
+		height: 100%
+	h3
+		font-size: 14px
+		text-transform: uppercase
+		font-weight: 700
+		line-height: 40px
+		margin-bottom: 20px
+		font-size: 22px
+		display: table-cell
+		vertical-align: middle
+		width: 100%
+		text-align: center
+		-webkit-transition: .3s
+		-moz-transition: .3s
+		-ms-transition: .3s
+		-o-transition: .3s
+		transition: .3s
+	.data
+		position: absolute
+		background-color: $ak
+		color: #FFF 
+		padding: 5px 15px
+		top: 10px
+		right: -7px  
+	&:hover
+		h3
+			color: $ak
+			
+
+//search
+.search
+	position: relative
+	.bg-ccc
+		position: absolute
+		top: 0
+	.ccc2
+		position: absolute
+		top: 100%
+		margin-top: -50px 
+	
+.bg-search
+	background-image: url("../img/villa.png")
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-position: center center
+	height: 385px
+	padding: 80px 0
+	.heading-h2
+		h2
+			color: #FFF
+		p
+			color: #FFF
+			height: 76px
+			overflow: hidden
+			
+
+//bottom-prom
+.bottom-prom
+	background-color: $ccc
+	padding-bottom: 30px 
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		text-align: center
+		margin-top: 50px 
+		li
+			display: inline-block
+			margin: 11px 10px 
+	.item-bottom-prom
+		width: 260px
+		overflow: hidden
+		height: 215px
+		background-color: #FFF
+		border: 2px solid #414141
+		padding: 20px
+		-webkit-transition: .3s
+		-moz-transition: .3s
+		-ms-transition: .3s
+		-o-transition: .3s
+		transition: .3s
+		img
+			text-align: center 
+		h3
+			font-size: 16px
+			text-transform: uppercase
+			display: inline-block
+			border-bottom: 2px solid $ak
+			line-height: 22px
+			margin: 0
+			margin-bottom: -5px
+			margin-top: 25px
+			color: #414141 !important
+		p
+			font-style: italic
+			height: 77px
+			overflow: hidden
+			line-height: 26px
+			color: #414141 !important
+		&:hover
+			border: 2px solid $ak
+			
+//CONTACT
+.contact
+	position: relative 
+	.heading-h2
+		margin-top: 20px 
+		h2
+			color: #FFF
+		p
+			color: #FFF 
+			
+
+.contact
+	height: 730px
+	background-image: url('../img/bg-contact.png')
+	background-position: center center
+	
+.left-block
+	padding-left: 100px
+	float: left
+	width: 440px
+	margin-top: 50px 
+	.cont-inf
+		color: #FFF
+		img
+			float: left
+			margin-right: 30px
+			margin-top: -3px 
+		p
+			font-size: 18px
+			line-height: 40px
+			font-weight: 300 
+		
+.soc-icon
+	margin-top: 50px
+	a
+		margin-right: 10px 
+		img
+			transition: .3s
+			width: 50px 
+		&:hover
+			img
+				opacity: .9
+				
+.form-block
+	float: right
+	margin-right: 100px
+	width: 330px
+	margin-top: 35px
+	h2
+		font-size: 21px 
+		color: #FFF
+		line-height: 29px
+		border-bottom: 2px solid $ak
+	form
+		input
+			border: 1px solid #fff
+			border-radius: 3px
+			padding: 6px 13px
+			width: 100%
+			font-weight: 300
+			background: transparent
+			margin-top: 4px
+			margin-bottom: 10px
+			color: #FFF
+			&:focus
+				border: 1px solid $ak
+				outline: none
+			&:-moz-placeholder
+				color: #FFF
+				font-style: italic 
+			&::-webkit-input-placeholder
+				color: #FFF
+				font-style: italic
+				font-size: 13px 
+		textarea
+			border: 1px solid #fff
+			border-radius: 3px
+			padding: 6px 13px
+			width: 100%
+			font-weight: 300
+			background: transparent
+			margin-top: 4px
+			margin-bottom: 10px
+			color: #FFF
+			&:focus
+				border: 1px solid $ak
+				outline: none
+			&:-moz-placeholder
+				color: #FFF
+				font-style: italic 
+			&::-webkit-input-placeholder
+				color: #FFF
+				font-style: italic
+				font-size: 13px 
+		.send
+			border: 1px solid $ak
+			background: $ak
+			transition: .3s
+			width: 100%
+			font-weight: 400
+			text-transform: uppercase
+			font-size: 14px
+			padding: 9px 0 7px 0
+			color: #FFF !important
+			&:hover
+				border: 1px solid #fff

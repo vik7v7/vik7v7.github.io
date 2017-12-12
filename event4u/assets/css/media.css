@@ -1,0 +1,254 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  #cssmenu {
+    display: none;
+    margin-top: 35px;
+    width: 100%; }
+    #cssmenu ul {
+      position: relative;
+      text-align: center;
+      background: #1d2127;
+      padding: 20px;
+      margin: 0; }
+      #cssmenu ul .has-sub {
+        width: 100%; }
+        #cssmenu ul .has-sub img {
+          display: none; }
+      #cssmenu ul li {
+        margin-left: 0;
+        width: 100%;
+        margin: 3px 0; }
+        #cssmenu ul li a {
+          padding: 6px 13px 4px 13px;
+          font-size: 16px; }
+          #cssmenu ul li a:hover {
+            transition: .3s; }
+        #cssmenu ul li ul {
+          position: relative;
+          width: inherit;
+          margin-top: 9px;
+          text-align: center; }
+          #cssmenu ul li ul .has-sub {
+            margin: 0 15px; }
+          #cssmenu ul li ul li {
+            padding-left: 0;
+            background: none;
+            border: none; }
+            #cssmenu ul li ul li a {
+              color: #fff !important; }
+            #cssmenu ul li ul li ul {
+              margin: 10px -15px 0 -15px;
+              background: #0b2131; }
+              #cssmenu ul li ul li ul li {
+                background: none;
+                padding-left: 0; }
+                #cssmenu ul li ul li ul li:hover {
+                  background: none; }
+                #cssmenu ul li ul li ul li a {
+                  color: #c8c8c8 !important; }
+                  #cssmenu ul li ul li ul li a:hover {
+                    color: #fdbc4b !important; }
+  .wrapper-platform {
+    width: 780px;
+    position: absolute;
+    left: 50%;
+    margin-left: -390px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .scroll-downs {
+    margin-top: 25px; }
+  .bg-dop-villa {
+    padding: 60px 0; }
+    .bg-dop-villa .heading-h2 h2 {
+      border-bottom: none; }
+  .left-block {
+    float: inherit;
+    width: 100%; }
+  .form-block {
+    width: 100%;
+    margin-top: 140px;
+    float: inherit;
+    text-align: center; }
+    .form-block h2 {
+      color: #414141; }
+    .form-block form input {
+      border: 1px solid #fdbc4b;
+      color: #414141; }
+      .form-block form input:focus {
+        border: 1px solid #414141; }
+      .form-block form input:-moz-placeholder {
+        color: #414141; }
+      .form-block form input::-webkit-input-placeholder {
+        color: #414141; }
+    .form-block form textarea {
+      border: 1px solid #fdbc4b;
+      color: #414141; }
+      .form-block form textarea:focus {
+        border: 1px solid #414141; }
+      .form-block form textarea:-moz-placeholder {
+        color: #414141; }
+      .form-block form textarea::-webkit-input-placeholder {
+        color: #414141; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; }
+  .wrapper-menu {
+    margin-top: -42px; }
+  .wrapper-platform {
+    width: 620px;
+    margin-left: -310px; }
+  .item-platform {
+    width: 280px;
+    height: 300px; }
+    .item-platform h3 {
+      font-size: 18px;
+      line-height: 28px; }
+    .item-platform p {
+      height: 110px; }
+  .item-news {
+    width: 280px;
+    height: 300px; }
+    .item-news h3 {
+      font-size: 18px;
+      line-height: 28px; }
+  .item-blog {
+    width: 280px;
+    height: 300px; }
+    .item-blog h3 {
+      font-size: 18px;
+      line-height: 28px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 765px) {
+  .scroll-downs {
+    display: none; }
+  .heading-header {
+    padding-top: 100px; }
+  .owl-nav {
+    display: none !important; }
+  .partners .owl-nav .owl-prev {
+    left: 0px; }
+  .partners .owl-nav .owl-next {
+    right: 0px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 47px;
+    line-height: 64px; }
+  .heading-h2 p {
+    width: 100%; }
+  .wrapper-platform {
+    width: 310px;
+    margin-left: -155px; }
+  .sert {
+    width: 100%; }
+    .sert p {
+      padding: 0; } }
+
+@media only screen and (max-width: 528px) {
+  h1 {
+    font-size: 41px;
+    line-height: 58px; }
+  .item-banket-room {
+    width: 370px; }
+    .item-banket-room .photo {
+      height: 250px; }
+      .item-banket-room .photo .plus {
+        width: 330px;
+        height: 220px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .heading-header {
+    padding-top: 100px; }
+    .heading-header img {
+      width: 270px; }
+  h2 {
+    border-bottom: none; }
+  .bg-mail {
+    padding: 60px 0; }
+  .bg-dop-uslugi {
+    padding: 55px 0; }
+  .bg-dop-villa .heading-h2 h2 {
+    font-size: 26px; }
+  .search .heading-h2 h2 {
+    font-size: 29px; }
+  .command ul li {
+    margin: 0 10px; }
+  .left-block {
+    margin-left: 0;
+    padding-left: 20px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 32px;
+    line-height: 52px; }
+  .form-block {
+    margin-top: 105px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .item-coock {
+    width: 300px; }
+    .item-coock .photo .plus {
+      width: 270px; }
+  .item-banket-room {
+    width: 290px; }
+    .item-banket-room .photo .plus {
+      width: 250px; }
+  .item-register {
+    width: 300px; }
+    .item-register .photo .plus {
+      width: 270px; }
+  .bg-dop-uslugi .heading-h2 h2 {
+    font-size: 29px; }
+  .left-block {
+    padding-left: 0; }
+  .form-block {
+    margin-top: 80px; } }
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  #cssmenu {
+    display: block !important; } }
