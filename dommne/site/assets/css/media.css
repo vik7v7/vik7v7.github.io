@@ -1,0 +1,193 @@
+@media only screen and (max-width: 1200px) {
+  #cssmenu {
+    display: none;
+    margin-top: 35px;
+    width: 100%; }
+    #cssmenu ul {
+      position: relative;
+      text-align: center;
+      background: #1d2127;
+      padding: 20px;
+      margin: 0; }
+      #cssmenu ul .has-sub {
+        width: 100%; }
+        #cssmenu ul .has-sub img {
+          display: none; }
+        #cssmenu ul .has-sub a {
+          padding: 6px 13px 4px 13px; }
+      #cssmenu ul li {
+        margin-left: 0;
+        width: 100%;
+        margin: 3px 0; }
+        #cssmenu ul li a {
+          padding: 6px 13px 4px 13px;
+          font-size: 16px; }
+          #cssmenu ul li a:hover {
+            transition: .3s; }
+        #cssmenu ul li ul {
+          position: relative;
+          width: inherit;
+          margin-top: 9px;
+          text-align: center; }
+          #cssmenu ul li ul .has-sub {
+            margin: 0 15px; }
+          #cssmenu ul li ul li {
+            padding-left: 0;
+            background: none;
+            border: none; }
+            #cssmenu ul li ul li a {
+              color: #fff !important; }
+            #cssmenu ul li ul li ul {
+              margin: 10px -15px 0 -15px;
+              background: #0b2131; }
+              #cssmenu ul li ul li ul li {
+                background: none;
+                padding-left: 0; }
+                #cssmenu ul li ul li ul li:hover {
+                  background: none; }
+                #cssmenu ul li ul li ul li a {
+                  color: #c8c8c8 !important; }
+                  #cssmenu ul li ul li ul li a:hover {
+                    color: #fdbc4b !important; } }
+
+@media only screen and (max-width: 992px) {
+  .item-category .photo {
+    height: 250px; }
+  .your-sell-buy-text .text h3 {
+    font-size: 40px;
+    line-height: 50px; }
+  .mail-send .text {
+    text-align: center;
+    height: 100%; }
+    .mail-send .text h3 {
+      width: 100%; }
+  .why-we .item-advantages {
+    width: 300px; }
+  .item-category .text h5 {
+    font-size: 20px;
+    line-height: 25px; }
+  .item-blog .photo {
+    height: 250px; }
+  .item-blog .text {
+    padding: 20px; }
+  .no-search .text {
+    height: 100%; }
+    .no-search .text h3 {
+      font-size: 25px;
+      line-height: 35px; }
+  footer iframe {
+    margin-top: 20px; } }
+
+@media only screen and (max-width: 768px) {
+  .animated {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; }
+  .wrapper-menu {
+    margin-top: -48px; }
+  .photo-slider-small ul {
+    margin-top: 5px; }
+  .photo-slider .heading-3 {
+    margin-top: 0; }
+  .item-object .photo {
+    height: 300px; }
+  .item-object .price {
+    top: 283px; }
+  .item-category {
+    margin: 30px 0; }
+  .item-blog .photo {
+    height: 350px; }
+  .item-blog .text {
+    padding: 20px 40px; }
+  .item-blog {
+    margin: 30px 0; } }
+
+@media only screen and (max-width: 480px) {
+  .your-sell-buy {
+    -webkit-clip-path: none;
+    clip-path: none; }
+  .category {
+    -webkit-clip-path: none;
+    clip-path: none; }
+  .our-rivier {
+    -webkit-clip-path: none;
+    clip-path: none; }
+  .partners {
+    -webkit-clip-path: none;
+    clip-path: none; }
+  footer {
+    -webkit-clip-path: none;
+    clip-path: none; }
+  .photo-slider-small {
+    display: none; }
+  .photo-slider .heading-3 {
+    position: absolute;
+    bottom: 15px;
+    margin: 15px 15px 0 0; }
+  .item-favorites-big .text-ico .detal {
+    margin-left: 0;
+    float: left;
+    margin-top: 8px; }
+  .item-favorites-big .text-ico {
+    height: 87px; }
+  .item-favorites-big .photo {
+    height: 250px; }
+  .item-favorites-big .price {
+    top: 227px; }
+  .item-object .photo {
+    height: 250px; }
+  .item-object .price {
+    top: 233px; }
+  .your-sell-buy-text .text h3 {
+    font-size: 28px;
+    line-height: 40px; }
+  .item-blog .photo {
+    height: 250px; }
+  .item-blog .text {
+    padding: 20px; }
+  .no-search .photo {
+    height: 300px; } }
+
+@media only screen and (max-width: 375px) {
+  .hidden {
+    display: none; } }
+
+@media only reen and (max-width: 360px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (max-width: 320px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 320px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 480px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 992px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 1200px) {
+  #cssmenu {
+    display: block !important; } }
