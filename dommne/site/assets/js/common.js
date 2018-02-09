@@ -38,7 +38,7 @@ $(function() {
 			$('.owl-slider').owlCarousel({
 			    loop:true,
 			    margin:0,
-			    nav:true,
+			    nav:false,
 			    autoplay:true,
 			    navText:["",""],
 			    responsive:{
