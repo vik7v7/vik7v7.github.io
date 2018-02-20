@@ -1,0 +1,160 @@
+@media only screen and (max-width: 1200px) {
+  #cssmenu {
+    display: none;
+    margin-top: 35px;
+    width: 100%; }
+    #cssmenu ul {
+      position: relative;
+      text-align: center;
+      background: #83ac43;
+      padding: 20px;
+      margin: 0; }
+      #cssmenu ul .has-sub {
+        width: 100%; }
+        #cssmenu ul .has-sub img {
+          display: none; }
+        #cssmenu ul .has-sub a {
+          padding: 6px 13px 4px 13px; }
+      #cssmenu ul li {
+        margin-left: 0;
+        width: 100%;
+        margin: 8px 0; }
+        #cssmenu ul li a {
+          padding: 6px 13px 4px 13px;
+          font-size: 16px;
+          color: #FFF; }
+          #cssmenu ul li a:hover {
+            transition: .3s; }
+        #cssmenu ul li ul {
+          position: relative;
+          width: inherit;
+          margin-top: 9px;
+          text-align: center; }
+          #cssmenu ul li ul .has-sub {
+            margin: 0 15px;
+            background-color: #FFF; }
+          #cssmenu ul li ul li {
+            padding-left: 0;
+            background: none;
+            border: none; }
+            #cssmenu ul li ul li a {
+              color: #fff !important; }
+            #cssmenu ul li ul li ul {
+              margin: 10px -15px 0 -15px;
+              background: #83ac43; }
+              #cssmenu ul li ul li ul li {
+                background: none;
+                padding-left: 0; }
+                #cssmenu ul li ul li ul li:hover {
+                  background: none; }
+                #cssmenu ul li ul li ul li a {
+                  color: #c8c8c8 !important; }
+                  #cssmenu ul li ul li ul li a:hover {
+                    color: #83ac43 !important; }
+  #cssmenu ul .has-sub .submenu a {
+    background-color: #6d9035 !important;
+    border-radius: 0; }
+  #cssmenu ul li ul li {
+    margin: 0; }
+  .soc-f {
+    background-color: #FFF; }
+    .soc-f img {
+      padding: 10px 10px 11px 10px; } }
+
+@media only screen and (max-width: 992px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (max-width: 768px) {
+  .animated {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; }
+  .icon-menu {
+    margin-top: -43px; }
+  .header-h1 {
+    width: 460px;
+    margin-left: -230px;
+    top: 200px; }
+    .header-h1 .h1-one {
+      font-size: 73px; }
+    .header-h1 .h1-two {
+      font-size: 90.2px; }
+    .header-h1 .h1-tree {
+      font-size: 30px; }
+  .photo-slider {
+    height: 515px; } }
+
+@media only screen and (max-width: 550px) {
+  .header-h1 {
+    width: 360px;
+    margin-left: -180px;
+    top: 220px; }
+    .header-h1 .h1-one {
+      font-size: 57px; }
+    .header-h1 .h1-two {
+      font-size: 70.2px;
+      margin-top: -37px; }
+    .header-h1 .h1-tree {
+      font-size: 23px;
+      margin-top: -61px; } }
+
+@media only screen and (max-width: 480px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (max-width: 375px) {
+  .header-h1 {
+    width: 280px;
+    margin-left: -140px;
+    top: 240px; }
+    .header-h1 .h1-one {
+      font-size: 44px; }
+    .header-h1 .h1-two {
+      font-size: 54px;
+      margin-top: -28px;
+      margin-left: 3px; }
+    .header-h1 .h1-tree {
+      font-size: 18px;
+      margin-top: -59px;
+      margin-left: -2px; } }
+
+@media only reen and (max-width: 360px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (max-width: 320px) {
+  .icon-menu {
+    margin-top: -45px; } }
+
+@media only screen and (min-width: 320px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 480px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 992px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 1200px) {
+  #cssmenu {
+    display: block !important; } }
