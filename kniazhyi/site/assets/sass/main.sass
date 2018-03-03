@@ -1,0 +1,430 @@
+$ak: #eb9e14
+$bg: #0e0608
+
+
+*
+    &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
+        color: #666
+        opacity: 1
+        
+::selection
+    background: #ccc
+
+::-moz-selection
+    background: #ccc
+    
+::-webkit-scrollbar
+  width: 10px
+
+::-webkit-scrollbar-track
+  background-color: #000
+
+::-webkit-scrollbar-thumb
+  border-radius: 2px
+  background-color: $ak
+
+body
+    input:focus:required:invalid, textarea:focus:required:invalid, input:required:valid, textarea:required:valid
+
+html.js
+    .loader
+        background: none repeat scroll 0 0 #ffffff
+        bottom: 0
+        height: 100%
+        left: 0
+        position: fixed
+        right: 0
+        top: 0
+        width: 100%
+        z-index: 9999
+    .loader_inner
+        background-image: url("../img/preloader.gif")
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center center
+        background-color: #fff
+        height: 60px
+        width: 60px
+        margin-top: -30px
+        margin-left: -30px
+        left: 50%
+        top: 50%
+        position: absolute
+
+body
+    font-family: sans-serif
+    font-size: 14px
+    min-width: 320px
+    position: relative
+    line-height: 1.6
+    font-family: 'Open Sans', sans-serif
+    overflow-x: hidden
+    background-color: #0e0608
+    letter-spacing: .2px 
+    color: #FFF
+    
+h2
+    text-transform: uppercase
+    border-bottom: 2px solid $ak
+    display: inline-block
+    line-height: 40px
+    font-size: 33px 
+    font-weight: 300
+    letter-spacing: 1px
+    
+.button
+    color: $ak
+    text-transform: uppercase
+    padding: 12px 25px 10px 25px
+    -webkit-border-radius: 100px 
+    border-radius: 100px
+    border: 2px solid $ak
+    -webkit-transition: .3s
+    -moz-transition: .3s
+    -ms-transition: .3s
+    -o-transition: .3s
+    transition: .3s
+    font-weight: 400
+    &:hover
+        background-color: $ak 
+        text-decoration: none
+        color: $bg
+
+.hidden
+    display: none
+    
+.center
+    text-align: center 
+    
+header
+    position: relative 
+    
+.bg-header
+    background-position: center center
+    -webkit-background-size: cover 
+    -o-background-size: cover 
+    background-size: cover
+    background-image: url('../img/bg.png')
+    height: 100vh
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 96%)
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 96%)
+    
+.wrapper-header
+    position: relative 
+
+.person-img
+    img
+        position: absolute 
+        width: 700px
+        bottom: 0
+
+.h1-img
+    img
+        position: absolute
+        right: 0
+        top: 70px
+        
+.header-data
+    position: absolute
+    right: 0
+    top: 450px 
+    text-align: right
+    text-shadow: 0 0 1em #000
+    .number
+        font-size: 55px
+        color: $ak
+        font-weight: 700
+        letter-spacing: 4px
+        margin: 0 
+    .mouth
+        color: #FFF
+        font-size: 45px
+        font-weight: 300
+        margin: 0
+        letter-spacing: 2px
+        margin-top: -30px 
+    .location-header
+        font-size: 18px
+        color: #FFF
+        font-weight: 400
+        letter-spacing: .5px
+        font-style: italic 
+        span
+            color: $ak
+            
+.header-element
+    display: none
+    
+.menu-toggle
+  width: 40px
+  height: 40px
+  position: absolute
+  cursor: pointer
+  top: 80px 
+  &.on
+    .one
+      -moz-transform: rotate(45deg) translate(7px, 7px)
+      -ms-transform: rotate(45deg) translate(7px, 7px)
+      -webkit-transform: rotate(45deg) translate(7px, 7px)
+      transform: rotate(45deg) translate(7px, 7px)
+    .two
+      opacity: 0
+    .three
+      -moz-transform: rotate(-45deg) translate(8px, -10px)
+      -ms-transform: rotate(-45deg) translate(8px, -10px)
+      -webkit-transform: rotate(-45deg) translate(8px, -10px)
+      transform: rotate(-45deg) translate(8px, -10px)
+
+.one, .two, .three
+  width: 100%
+  height: 2px
+  background: white
+  margin: 10px auto
+  backface-visibility: hidden
+  -moz-transition-duration: 0.3s
+  -o-transition-duration: 0.3s
+  -webkit-transition-duration: 0.3s
+  transition-duration: 0.3s
+
+nav ul
+  margin: 0
+  padding: 0
+  font-family: Open Sans
+  list-style: none
+  margin: 4em auto
+  text-align: center
+  &.hidden
+    display: none
+  a
+    -moz-transition-duration: 0.5s
+    -o-transition-duration: 0.5s
+    -webkit-transition-duration: 0.5s
+    transition-duration: 0.5s
+    text-decoration: none
+    color: white
+    font-size: 2.5em
+    line-height: 2
+    width: 100%
+    display: block
+    &:hover
+      color: $ak
+      text-decoration: none  
+
+.menu-section.on
+  z-index: 10
+  display: block
+  position: absolute
+  text-align: center
+  width: 100%
+  height: 100% 
+  background-color: rgba(0, 0, 0, 0.8)
+  
+
+// START ABOUT
+.about
+    padding: 100px 0
+    display: block 
+
+.about-img
+    img
+        width: 100%
+        
+.about-text
+    font-weight: 300
+    margin-left: 10px
+    margin-top: 40px 
+    p
+        line-height: 33px
+        letter-spacing: 1px
+    .text
+        height: 272px
+        overflow: hidden  
+// END ABOUT
+
+
+// START location
+.location
+    -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%)
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 93%)
+    background-position: center center
+    -webkit-background-size: cover 
+    -o-background-size: cover 
+    background-size: cover
+    padding: 100px 0 
+    ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+        text-align: center
+        margin-top: 30px 
+        li
+            display: inline-block
+        .item-advantages
+            width: 288px
+            overflow: hidden
+            height: 200px
+            margin: 20px 0
+            img
+                text-align: center
+                width: 28px 
+            h3
+                font-size: 20px
+                text-transform: uppercase
+                display: inline-block
+                border-bottom: 2px solid $ak
+                line-height: 27px
+                margin: 0
+                margin-bottom: -5px
+                margin-top: 25px
+                font-weight: 400 
+            p
+                font-style: italic
+                padding: 0 20px
+                line-height: 26px
+                color: #fff
+                font-weight: 300 
+// END location
+
+
+
+// START ABOUT
+.area
+    padding: 50px 0 
+    p
+        font-size: 15px
+        letter-spacing: .5px
+        span
+            color: $ak 
+    iframe
+        width: 100% !important
+        height: 600px
+        margin: 20px 0
+// END ABOUT
+
+// START PARTNERS
+.partners
+    ul
+        padding: 0
+        list-style-type: none
+        text-align: center
+        margin-top: 20px 
+        li
+            display: inline-block
+            width: 190px
+            height: 210px
+            margin: 10px 0 
+.item-partners
+    text-align: center
+    display: table
+    width: 100%
+    height: 100%
+    p
+        display: table-cell
+        vertical-align: middle 
+        img
+            padding: 0 30px
+            width: inherit
+            max-width: 100%
+            &:hover
+                opacity: .8
+// END PARTNERS
+
+// START GALLERY
+ul.popup-gallery
+    margin: 0
+    padding: 0
+    list-style-type: none
+    text-align: center
+    margin-bottom: 50px
+    margin-top: 10px 
+    li
+        display: inline-block
+        width: 275px 
+        height: 204px
+        overflow: hidden
+        margin: 7px
+        position: relative
+        &:hover
+            background-color: #000
+            img
+                opacity: .6 
+            .item-gallery
+                .plus
+                    display: block
+        img
+            width: 100%
+            height: 100%
+            -webkit-transition: .3s 
+            -moz-transition: .3s 
+            -ms-transition: .3s 
+            -o-transition: .3s 
+            transition: .3s 
+        a
+            outline: none
+.item-gallery
+    .plus
+        background: url('../img/plus.png')
+        width: 15px
+        height: 16px
+        position: absolute
+        left: 50%
+        top: 50%
+        margin-left: -7px
+        margin-top: -8x
+        display: none
+        transition: .3s
+// END GALLERY
+
+
+
+//START CONTACT
+.contact
+	position: relative 
+	background-position: center center
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-image: url('../img/bg.png')
+	height: 700px
+	-webkit-clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%)
+	clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%)
+	padding-top: 70px 
+
+
+.person-img-contact
+	text-align: right
+	img
+		transform: scale(-1, 1)
+		width: 500px
+		position: relative
+		bottom: -30px
+		
+.contact-text
+	position: absolute
+	top: 200px
+	width: 600px
+	font-style: italic 
+	ul
+		margin: 0
+		padding: 0
+		list-style-type: none
+		margin-top: 50px 
+		li
+			display: inline-block
+			width: 280px
+			margin: 5px 0 
+			span
+				color: $ak
+				margin-top: 3px
+			img
+				width: 45px
+				float: left
+			p
+				float: left
+				margin-top: 4px
+				margin-left: 10px
+			.contact-mail
+				font-style: italic
+				color: #FFF 
+				 
+//END CONTACT
