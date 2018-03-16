@@ -1,7 +1,0 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic");
-@font-face {
-  font-family: 'Intro Black';
-  src: url("../fonts/Intro-Black.eot");
-  src: url("../fonts/Intro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Intro-Black.woff") format("woff"), url("../fonts/Intro-Black.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
