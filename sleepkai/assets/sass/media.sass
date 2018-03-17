@@ -12,7 +12,15 @@ $main: #333333
         width: 66%
         
     .advantages
-        margin-top: 120px 
+        margin-top: 120px
+        
+    .catalog
+        #slider
+            width: 291px
+    
+    .catalog 
+        ul.stock-list
+            text-align: left
 
 @media only screen and (max-width: 992px)
     .cart
@@ -45,7 +53,37 @@ $main: #333333
         
     
     .advantages
-        margin-top: 50px 
+        margin-top: 50px
+        
+    .catalog    
+        ul.stock-list
+            li
+                width: 237px
+                margin: 5px  
+        .input-group-price
+            width: 100%
+            #slider
+                width: 100%
+        .input-wrapper-price
+            margin-top: 10px 
+            float: left
+            position: relative
+            left: 50%
+            -webkit-transform: translateX(-50%)
+            -moz-transform: translateX(-50%)
+            -ms-transform: translateX(-50%)
+            -o-transform: translateX(-50%)
+            transform: translateX(-50%)
+            border: none
+            
+            #minCost2
+                border-bottom: 1px solid #ccc
+                border-right: none 
+            #maxCost2
+                border-bottom: 1px solid #ccc
+    
+    .filter-show
+        display: inline-block         
 
 @media only screen and (max-width: 768px)
     .animated
@@ -94,6 +132,7 @@ $main: #333333
             line-height: 25px 
             a
                 display: inline-table
+                width: inherit !important 
                 span
                     display: block 
         li:nth-child(1)
@@ -308,7 +347,7 @@ $main: #333333
         margin-top: 20px
         margin-bottom: 17px
         
-    
+
 
 @media only screen and (max-width: 375px)
     #cssmenu

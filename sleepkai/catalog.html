@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Главная</title>
+	<title>Каталог</title>
 	<meta name="description" content="">
 
 	<link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
@@ -96,7 +96,7 @@
 					<nav>
 						<ul class="category">
 							<li>
-								<a href="" class="active" style="width: 200px;">
+								<a href="" class="active">
 									<img src="assets/img/matras.svg" alt="">
 									<span class="">Матрасы</span>
 								</a>
@@ -115,7 +115,7 @@
 								</a>
 							</li>
 							<li>
-								<a href="" style="width: 177px;">
+								<a href="">
 									<img src="assets/img/pod.svg" alt="">
 									<span class="">Подушки</span>
 								</a>
@@ -127,229 +127,232 @@
 		</div>
 	</header>
 
-	<section class="baner-index">
-		<div class="baner-wrapper-img" style="background-image: url(assets/img/baner-index.png);">
-			<div class="text">
-				<p>Наш самый продаваемый матрас из колллекции EXTRA SLEEP</p>
-			</div>
+	<div class="breadcrumbs">
+		<div class="container">
+			<ul>
+				<li>
+					<a href="" class="active">Главная</a>
+				</li>
+				<li>
+					<a href="">▪&nbsp; Матрасы</a>
+				</li>
+			</ul>
 		</div>
+	</div>
+
+	<section class="catalog">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
-					<div class="baner-wrapper-text">
-						<div class="text">
-							<h2>Коллекция матрасов <br> <span>EXTRA SLEEP</span></h2>
-							<p>Матрас Gelios - матрас на сотовом пружинном блоке “Sotta Pocket 750” гарантирует максимальный уровень комфорта и правильную поддержку позвоночника. Эта модель матраса, с одной стороны, объединяет в себе самые мягкие наполнители: эрголатес и memorix, а с другой стороны жесткие наполнители такие как натуральный кокос и термовойлок.</p>
+				<div class="col-lg-3 col-md-4">
+					<div class="filter-e"></div>
+					<div class="catalog-filter-wrapper">
+						<h1>Подобрать матрас</h1>
+
+						<form class="form-filter-wrapper ajax-form" method="GET" >
+
+						<div class="input-group-price">
+							<p>Цена ₽</p>
+						   	<div id="slider"></div>
+							<div class="input-wrapper-price">
+								<span>От</span><input type="text" id="minCost2" value="0">
+								<span>До</span><input type="text" id="maxCost2" value="30000">
+							</div>
 						</div>
-						<a href="" class="button-big">Подроробнее о матрасе</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<section class="advantages">
-		<div class="container">
-			<div class="row">
-				<ul class="owl-carousel owl-advantages">
-					<li>
-						<img src="assets/img/i-doc.png" alt="">
-						<p class="name">Гарантия</p>
-						<p>Гарантия качества на матрасы 10 лет, на кровати — 2 года.</p>
-					</li>
-					<li>
-						<img src="assets/img/i-map.png" alt="">
-						<p class="name">Доставка</p>
-						<p><span>Бесплатная доставка</span> в течении двух дней.</p>
-					</li>
-					<li>
-						<img src="assets/img/i-list.png" alt="">
-						<p class="name">Асортимент</p>
-						<p>80 моделей матрасов и 200 товаров для сна.</p>
-					</li>
-					<li>
-						<img src="assets/img/i-bage.png" alt="">
-						<p class="name">Скидки</p>
-						<p>Цены от производителя. Акции и <span>скидки до 50%.</span></p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
+						<div class="form-select">
+						  <select name="block-rent-sell" id="">
+						    <option value="" disabled="disabled" selected="selected">Тип матраса</option>
+						    <option value="1">Выбор 1</option>
+						    <option value="2">Выбор 2</option>
+						  </select>
+						</div>
 
-	<section class="filter">
-		<div class='wave'></div>
-			<div class="wave-content">
-				<div class="container">
-					<h2>Подбор матраса по параметрам</h2>
+						<div class="form-select">
+						  <select name="block-rent-sell" id="">
+						    <option value="" disabled="disabled" selected="selected">Жесткость</option>
+						    <option value="1">Выбор 1</option>
+						    <option value="2">Выбор 2</option>
+						  </select>
+						</div>
 
-					<form class="form-tour ajax-form" method="GET" >
-						
-						<ul class="form-filter-ul">
-							<li>
-								<div class="input-group-price">
-									<p>Цена ₽</p>
-								   	<div id="slider"></div>
-									<div class="input-wrapper-price">
-										<span>От</span><input type="text" id="minCost2" value="0">
-										<span>До</span><input type="text" id="maxCost2" value="30000">
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="form-select">
-									<p>Тип матраса</p>
-								  <select name="block-rent-sell" id="">
-								    <option value="" disabled="disabled" selected="selected">Выбрать из списка</option>
-								    <option value="1">Выбор 1</option>
-								    <option value="2">Выбор 2</option>
-								  </select>
-								</div>
-							</li>
-							<li>
-								<div class="form-select">
-									<p>Жесткость</p>
-								  <select name="block-rent-sell" id="">
-								    <option value="" disabled="disabled" selected="selected">Выбрать из списка</option>
-								    <option value="1">Выбор 1</option>
-								    <option value="2">Выбор 2</option>
-								  </select>
-								</div>
-							</li>
-							<li>
-								<div class="form-select">
-									<p>Высота</p>
-								  <select name="block-rent-sell" id="">
-								    <option value="" disabled="disabled" selected="selected">Выбрать из списка</option>
-								    <option value="1">Выбор 1</option>
-								    <option value="2">Выбор 2</option>
-								  </select>
-								</div>
-							</li>
-						</ul>
+						<div class="form-select">
+						  <select name="block-rent-sell" id="">
+						    <option value="" disabled="disabled" selected="selected">Высота</option>
+						    <option value="1">Выбор 1</option>
+						    <option value="2">Выбор 2</option>
+						  </select>
+						</div>
 
+						<div class="form-select">
+						  <select name="block-rent-sell" id="">
+						    <option value="" disabled="disabled" selected="selected">Высота</option>
+						    <option value="1">Выбор 1</option>
+						    <option value="2">Выбор 2</option>
+						  </select>
+						</div>
+
+						<div class="form-select">
+						  <select name="block-rent-sell" id="">
+						    <option value="" disabled="disabled" selected="selected">Высота</option>
+						    <option value="1">Выбор 1</option>
+						    <option value="2">Выбор 2</option>
+						  </select>
+						</div>
 
 						<div class="input-group" style="text-align: center;">
-		    		      <input class="send-filter ajax-start index-filter" id="" name="submit" type="submit" value="Подобрать матрас"/>
+		    		      <input class="send-filter-catalog ajax-start index-filter" id="" name="submit" type="submit" value="Подобрать"/>
 		    		    </div>
 
+		    		    <div class="center"><a href="">Сбросить фильтр</a></div>
+
 					</form>
+
+					</div>
 				</div>
-			</div>
-			<div class='wave wave2'></div>
-	</section>
 
-	<section class="stock">
-		<div class="stock-bg" style="background-image: url(assets/img/stock-bg.png);"></div>
-		<div class="container">
-			<div class="center"><h2>Акции</h2></div>
+				<div class="col-lg-9 col-md-8">
+					<div class="filter-top-line">
+						<div class="top-line-sort">
+							<p>Сортировать: <span>По цене</span>&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;</p>
+						</div>
+						<div class="top-line-show"><p>Найдено обьектов &nbsp;<span>9</span></p></div>
 
-			<div class="row">
-				<ul class="stock-list owl-carousel owl-stock">
-					<li>
-						<div class="item-stock">
-							<div class="action"><span>акция</span></div>
-								<div class="padding-10">
-									<div class="center"><img src="assets/img/product.png" alt=""></div>
-									<h3>МАТРАС ГЕЛИОС</h3>
-									<p><b>Макс. нагрузка:</b> До 150 кг</p>
-									<p><b>Жесткость:</b> Выше средней</p>
-									<p><b>Высота:</b> 24 см</p>
-									<p><b>Тип матраса:</b> Пружинный</p>
-								</div>
-							<div class="price">
-								<p>12 900 <span>₽</span></p>
-								<div class="price-disable">23 000</div>
-							</div>
-							<div class="buttun-wrapper">
-								<a href="" class="button-small">подробнее</a>
-							</div>
+						<div class="filter-show">
+							<p>Фильтр подбора матраса</p>
+							<p class="plus">+</p>
 						</div>
-					</li>
-					<li>
-						<div class="item-stock">
-							<div class="action"><span>акция</span></div>
-								<div class="padding-10">
-									<div class="center"><img src="assets/img/product.png" alt=""></div>
-									<h3>МАТРАС ГЕЛИОС</h3>
-									<p><b>Макс. нагрузка:</b> До 150 кг</p>
-									<p><b>Жесткость:</b> Выше средней</p>
-									<p><b>Высота:</b> 24 см</p>
-									<p><b>Тип матраса:</b> Пружинный</p>
-								</div>
-							<div class="price">
-								<p>12 900 <span>₽</span></p>
-								<div class="price-disable">23 000</div>
-							</div>
-							<div class="buttun-wrapper">
-								<a href="" class="button-small">подробнее</a>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-stock">
-							<div class="action"><span>акция</span></div>
-								<div class="padding-10">
-									<div class="center"><img src="assets/img/product.png" alt=""></div>
-									<h3>МАТРАС ГЕЛИОС</h3>
-									<p><b>Макс. нагрузка:</b> До 150 кг</p>
-									<p><b>Жесткость:</b> Выше средней</p>
-									<p><b>Высота:</b> 24 см</p>
-									<p><b>Тип матраса:</b> Пружинный</p>
-								</div>
-							<div class="price">
-								<p>12 900 <span>₽</span></p>
-								<div class="price-disable">23 000</div>
-							</div>
-							<div class="buttun-wrapper">
-								<a href="" class="button-small">подробнее</a>
-							</div>
-						</div>
-					</li>
-					<li>
-						<div class="item-stock">
-							<div class="action"><span>акция</span></div>
-								<div class="padding-10">
-									<div class="center"><img src="assets/img/product.png" alt=""></div>
-									<h3>МАТРАС ГЕЛИОС</h3>
-									<p><b>Макс. нагрузка:</b> До 150 кг</p>
-									<p><b>Жесткость:</b> Выше средней</p>
-									<p><b>Высота:</b> 24 см</p>
-									<p><b>Тип матраса:</b> Пружинный</p>
-								</div>
-							<div class="price">
-								<p>12 900 <span>₽</span></p>
-								<div class="price-disable">23 000</div>
-							</div>
-							<div class="buttun-wrapper">
-								<a href="" class="button-small">подробнее</a>
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
+					</div>
 
-	<section class="contact">
-		<div class="bg-map">
-			<div id="map"></div>
-		</div>
-		<div class="container">
-			<div class="rowc">
-			<div class="contact-text">
-				<h2>Приезжайте к нам</h2>
-				<h3>Мебельный салоны</h3>
-				<p>ул. Партизана Железняка 40А (ТЦ Взлетка-Сити, цоколь) <br>
-					Пн - Вс, без выходных с 10.00 до 20.00</p>
+					<div class="result-filter"></div>
 
-				<p>ул. Телевизорная 1, стр. 37 (ТД Форт)<br>
-					Пн - Вс, без выходных с 10.00 до 20.00<br>
-					Телефон: +7 (391) 204-63-31</p>
-				<br>
-				<h3>Мебельный фабрика</h3>
-				<p>ул. Телевизорная 1, стр. 37 (ТД Форт)</p>
-			</div>
+					<div class="row">
+
+					<ul class="stock-list">
+						<li>
+							<div class="item-stock">
+								<div class="action"><span>акция</span></div>
+									<div class="padding-10">
+										<div class="center"><img src="assets/img/product.png" alt=""></div>
+										<h3>МАТРАС ГЕЛИОС</h3>
+										<p><b>Макс. нагрузка:</b> До 150 кг</p>
+										<p><b>Жесткость:</b> Выше средней</p>
+										<p><b>Высота:</b> 24 см</p>
+										<p><b>Тип матраса:</b> Пружинный</p>
+									</div>
+								<div class="price">
+									<p>12 900 <span>₽</span></p>
+									<div class="price-disable">23 000</div>
+								</div>
+								<div class="buttun-wrapper">
+									<a href="" class="button-small">подробнее</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-stock">
+								<div class="action"><span>акция</span></div>
+									<div class="padding-10">
+										<div class="center"><img src="assets/img/product.png" alt=""></div>
+										<h3>МАТРАС ГЕЛИОС</h3>
+										<p><b>Макс. нагрузка:</b> До 150 кг</p>
+										<p><b>Жесткость:</b> Выше средней</p>
+										<p><b>Высота:</b> 24 см</p>
+										<p><b>Тип матраса:</b> Пружинный</p>
+									</div>
+								<div class="price">
+									<p>12 900 <span>₽</span></p>
+									<div class="price-disable">23 000</div>
+								</div>
+								<div class="buttun-wrapper">
+									<a href="" class="button-small">подробнее</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-stock">
+								<div class="action"><span>акция</span></div>
+									<div class="padding-10">
+										<div class="center"><img src="assets/img/product.png" alt=""></div>
+										<h3>МАТРАС ГЕЛИОС</h3>
+										<p><b>Макс. нагрузка:</b> До 150 кг</p>
+										<p><b>Жесткость:</b> Выше средней</p>
+										<p><b>Высота:</b> 24 см</p>
+										<p><b>Тип матраса:</b> Пружинный</p>
+									</div>
+								<div class="price">
+									<p>12 900 <span>₽</span></p>
+									<div class="price-disable">23 000</div>
+								</div>
+								<div class="buttun-wrapper">
+									<a href="" class="button-small">подробнее</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-stock">
+								<div class="action"><span>акция</span></div>
+									<div class="padding-10">
+										<div class="center"><img src="assets/img/product.png" alt=""></div>
+										<h3>МАТРАС ГЕЛИОС</h3>
+										<p><b>Макс. нагрузка:</b> До 150 кг</p>
+										<p><b>Жесткость:</b> Выше средней</p>
+										<p><b>Высота:</b> 24 см</p>
+										<p><b>Тип матраса:</b> Пружинный</p>
+									</div>
+								<div class="price">
+									<p>12 900 <span>₽</span></p>
+									<div class="price-disable">23 000</div>
+								</div>
+								<div class="buttun-wrapper">
+									<a href="" class="button-small">подробнее</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-stock">
+								<div class="action"><span>акция</span></div>
+									<div class="padding-10">
+										<div class="center"><img src="assets/img/product.png" alt=""></div>
+										<h3>МАТРАС ГЕЛИОС</h3>
+										<p><b>Макс. нагрузка:</b> До 150 кг</p>
+										<p><b>Жесткость:</b> Выше средней</p>
+										<p><b>Высота:</b> 24 см</p>
+										<p><b>Тип матраса:</b> Пружинный</p>
+									</div>
+								<div class="price">
+									<p>12 900 <span>₽</span></p>
+									<div class="price-disable">23 000</div>
+								</div>
+								<div class="buttun-wrapper">
+									<a href="" class="button-small">подробнее</a>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-stock">
+								<div class="action"><span>акция</span></div>
+									<div class="padding-10">
+										<div class="center"><img src="assets/img/product.png" alt=""></div>
+										<h3>МАТРАС ГЕЛИОС</h3>
+										<p><b>Макс. нагрузка:</b> До 150 кг</p>
+										<p><b>Жесткость:</b> Выше средней</p>
+										<p><b>Высота:</b> 24 см</p>
+										<p><b>Тип матраса:</b> Пружинный</p>
+									</div>
+								<div class="price">
+									<p>12 900 <span>₽</span></p>
+									<div class="price-disable">23 000</div>
+								</div>
+								<div class="buttun-wrapper">
+									<a href="" class="button-small">подробнее</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<div class="center"><a href="" class="download-other">Загрузить еще 10</a></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -503,7 +506,14 @@
 	<script src="assets/js/jquery-ui.js"></script>
 	<script type="text/javascript" src="assets/js/js.js"></script>
 
-	
+<script type="text/javascript">
+
+  $(window).resize(function(){
+    var windowWidth = $(window).width();
+    if(windowWidth < 992)$('.result-filter').append( $('.catalog-filter-wrapper') );
+    else $('.result-filter').append( $('.filter-e') );
+  });
+</script>
 
 
 	<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>

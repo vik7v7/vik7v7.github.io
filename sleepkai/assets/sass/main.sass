@@ -299,19 +299,20 @@ ul.category
     margin: 0
     padding: 0
     text-align: center
-    margin-top: 30px
+    margin-top: 24px
     z-index: 10
     li
         list-style: none
         display: inline-block
         margin: 9px -2px 
         a
+            height: 51px
+            display: block
             color: #FFF
             font-size: 22px
             width: 100%
-            height: 100%
             background-color: $ak
-            padding: 12px 22px
+            padding: 8px 22px
             -webkit-transition: .3s 
             -moz-transition: .3s 
             -ms-transition: .3s 
@@ -892,3 +893,156 @@ footer
             color: $ak
 // end FOOTER
 
+// start CATALOG
+.breadcrumbs
+    ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+        li
+            display: inline-block
+            margin: 0 2px 
+            a
+                color: $main 
+            .active
+                color: $fiolet
+
+.catalog
+    margin-top: 15px
+    #slider
+        width: 260px
+    .input-wrapper-price
+        width: 260px
+        border-right: none
+        border-left: none
+        margin-bottom: 5px 
+    .input-group-price
+        margin: 0
+        p
+            color: $main
+            font-size: 14px
+            font-style: italic
+            margin-left: 15px 
+        span
+            margin-right: 16px 
+    .ui-slider-horizontal
+        .ui-slider-handle
+            margin-left: -1px
+        span:nth-child(3)
+            margin-left: -19px 
+    .form-select
+        width: 100%
+        margin: 5px 0
+        select
+            height: 40px
+            padding-top: 1px
+            background: #fff url(../img/arrow-small.png) no-repeat 98% 8px
+            border: 0
+            border-top: 1px solid #ccc
+            border-bottom: 1px solid #ccc 
+
+.catalog-filter-wrapper
+    border: 1px solid $fiolet
+    padding-bottom: 7px 
+    h1
+        background-color: $fiolet
+        width: 100%
+        padding: 2px 0
+        font-size: 22px
+        color: #FFF
+        text-align: center
+        font-weight: 400
+        margin: 0
+
+.catalog
+    .input-group
+        margin-top: 6px
+        margin-bottom: 3px 
+        input
+            background-color: $ak
+            color: #FFF
+            -webkit-transition: .3s 
+            -moz-transition: .3s 
+            -ms-transition: .3s 
+            -o-transition: .3s 
+            transition: .3s
+            font-size: 18px
+            margin-top: 5px
+            display: inline-block 
+            border: 0
+            text-align: center
+            padding: 4px 24px
+            outline: none
+            &:hover
+                text-decoration: none
+                background-color: #BD0000
+                color: #FFF
+                
+.form-filter-wrapper
+    a
+        text-align: center
+        color: #888
+        font-size: 13px
+        -webkit-transition: .3s 
+        -moz-transition: .3s 
+        -ms-transition: .3s 
+        -o-transition: .3s 
+        transition: .3s
+        &:hover
+            color: $ak
+            
+.filter-top-line
+    background-color: #EEE
+    height: 40px
+    margin-bottom: 10px 
+    
+.top-line-sort
+    display: inline-block
+    float: left 
+    span
+        color: $fiolet
+    p
+        margin: 8px 10px
+        
+.top-line-show
+    display: inline-block
+    float: left
+    span
+        color: $fiolet
+    p
+        margin: 8px 0
+        
+.filter-show
+    display: none 
+    float: right
+    background-color: $fiolet
+    cursor: pointer
+    p
+        color: #FFF
+        margin: 0
+        padding: 7.5px 15px
+        float: left
+    .plus
+        background: $main 
+        
+.download-other
+    background-color: $fiolet
+    color: #FFF
+    -webkit-transition: .3s 
+    -moz-transition: .3s 
+    -ms-transition: .3s 
+    -o-transition: .3s 
+    transition: .3s
+    font-size: 18px
+    margin-top: 5px
+    display: inline-block 
+    border: 0
+    text-align: center
+    padding: 4px 24px
+    outline: none
+    margin-top: 20px 
+    &:hover
+        text-decoration: none
+        background-color: #924AE1
+        color: #FFF
+// end CATALOG
