@@ -136,3 +136,18 @@ $(window).load(function() {
 
 
 
+$(document).ready(function() {
+ 
+  $(window).resize(function(){
+    var windowWidth = $(window).width();
+    if(windowWidth <= 992)$('.result-filter').append( $('.catalog-filter-wrapper') );
+    else $('.result-filter').append( $('.filter-e') );
+  });
+});
+
+
+$(document).ready(function(){
+	$(".filter-show").click(function(){
+		$(".catalog-filter-wrapper").slideToggle();
+	});
+});
