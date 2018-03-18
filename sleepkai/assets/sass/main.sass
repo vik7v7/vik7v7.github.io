@@ -301,6 +301,7 @@ ul.category
     text-align: center
     margin-top: 24px
     z-index: 10
+    position: relative 
     li
         list-style: none
         display: inline-block
@@ -705,6 +706,7 @@ ul.stock-list
         top: 90px
         position: absolute
         left: 8px
+        border: none
     .owl-next
         width: 50px
         height: 50px
@@ -714,6 +716,7 @@ ul.stock-list
         right: 0
         position: absolute
         right: 8px
+        border: none
         
 .stock-bg
     height: 330px
@@ -1045,4 +1048,399 @@ footer
         text-decoration: none
         background-color: #924AE1
         color: #FFF
+        
+.catalog-seo-text
+    display: none 
+    h1
+        font-size: 28px
+        margin: 0
+        margin-bottom: -16px
+        margin-top: -13px
+    p
+        font-size: 18px
+        line-height: 22px  
 // end CATALOG
+
+
+// start PRODUCT
+.product
+    h1
+        color: $fiolet
+        font-size: 40px
+        text-align: center
+        font-family: 'Intro Black'
+        text-transform: uppercase
+        
+.product-buy-wrapper
+    margin-top: 200px 
+    .text
+        p
+            font-size: 14px
+            line-height: 18px 
+
+.order-size
+    margin: 20px 0 
+    select
+        height: 40px
+        padding-top: 1px
+        background: #fff url(../img/arrow-small.png) no-repeat 98% 8px
+        border: 1px solid $main
+    .form-select
+        margin: 0
+        width: 100% 
+
+.order-buy
+    margin: 20px 0 
+     
+.buy
+    color: #fff
+    background-color: $ak 
+    -webkit-transition: .3s 
+    -moz-transition: .3s 
+    -ms-transition: .3s 
+    -o-transition: .3s 
+    transition: .3s
+    text-align: center
+    padding: 11px 0
+    font-size: 24px
+    display: block
+    outline: none
+    &:hover
+        color: #fff
+        background-color: #BD0000
+
+.order-cart
+    margin: 20px 0
+    
+.add-cart
+    color: #fff
+    background-color: $fiolet 
+    -webkit-transition: .3s 
+    -moz-transition: .3s 
+    -ms-transition: .3s 
+    -o-transition: .3s 
+    transition: .3s
+    text-align: center
+    padding: 11px 0
+    font-size: 24px
+    display: block
+    outline: none
+    width: 100%
+    border: none  
+    &:hover
+        color: #fff
+        background-color: #924AE1
+
+.product-buy-price
+    position: absolute
+    top: 0
+    text-align: center
+    top: -17px
+    left: -76px 
+    p
+        font-size: 20px
+        margin: 0
+        text-decoration: line-through
+        color: #4a4a4a
+        margin-bottom: 2px  
+    .price
+        font-size: 38px 
+        font-family: 'Intro black'
+        width: 227px
+        height: 71px
+        color: #FFF 
+        background-image: url('../img/price.svg')
+        -webkit-background-size: cover 
+        -o-background-size: cover 
+        background-size: cover
+        padding: 6px 0px 0px 22px
+        
+.fotorama__thumb
+    border: 1px solid #ccc
+    
+
+.korpus
+  margin-top: 35px
+  >
+    div, input
+      display: none
+  label
+    padding: 8px 20px 6px 20px
+    line-height: 28px
+    cursor: pointer
+    position: relative
+    bottom: 1px
+    background: #eee
+    font-size: 22px
+    margin: 0 1px 
+  input[type="radio"]:checked + label
+    background-color: #CCCCCC
+  > input
+    &:nth-of-type(1):checked ~ div:nth-of-type(1), &:nth-of-type(2):checked ~ div:nth-of-type(2), &:nth-of-type(3):checked ~ div:nth-of-type(3), &:nth-of-type(4):checked ~ div:nth-of-type(4), &:nth-of-type(5):checked ~ div:nth-of-type(5), &:nth-of-type(6):checked ~ div:nth-of-type(6), &:nth-of-type(7):checked ~ div:nth-of-type(7), &:nth-of-type(8):checked ~ div:nth-of-type(8), &:nth-of-type(9):checked ~ div:nth-of-type(9)
+      margin-top: -22px
+      display: block
+      padding: 20px 10px
+      border: 1px solid #eee
+      p
+        font-size: 18px
+        line-height: 23px 
+  label
+    display: inline-block
+    
+label.characteristic
+    margin-left: 10px 
+// end PRODUCT
+
+.owl-dots
+    display: none !important
+
+.stock-product
+    h2
+        line-height: 40px
+        margin-bottom: 30px 
+     
+
+// start ARTICLE
+.article
+    margin-top: 15px 
+
+.article-content
+    border: 1px solid #ccc
+    position: relative 
+
+
+.article-img-h1
+    position: relative
+    background-position: center center
+    -webkit-background-size: cover 
+    -o-background-size: cover 
+    background-size: cover
+    height: 300px 
+    img
+        width: 100%
+    .data
+        padding: 1px 10px
+        background-color: #AAA
+        position: absolute
+        bottom: 0
+        right: 0
+        color: #000 
+        
+.h1-bg
+    position: absolute
+    top: 0
+    background-color: rgba(51,51,51,.7)
+    width: 100%
+    z-index: 1 
+    h1
+        color: #FFF 
+        text-align: center
+        font-size: 26px
+        
+.article-text
+    padding: 0 15px 
+    h2
+        font-size: 22px
+        color: $fiolet
+        line-height: 28px 
+    p
+        font-size: 18px
+        line-height: 22px
+
+.recomends-read
+    border: 1px solid #ccc
+    .recomend-bg
+        background-color: $fiolet
+        color: #FFF
+        width: 100%
+        padding: 6px 0
+        font-size: 18px
+        text-align: center
+        margin: 0
+        
+ul.recomends-read-ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+    background-color: #eee
+    li
+        padding: 7px 17px
+        line-height: 19px
+        a
+            color: $main
+            -webkit-transition: .3s 
+            -moz-transition: .3s 
+            -ms-transition: .3s 
+            -o-transition: .3s 
+            transition: .3s
+            &:hover
+                color: $ak 
+    li:nth-child(odd)
+        background-color: #FFF 
+        
+.fast-filter
+    margin-top: 30px 
+    color: #FFF
+    text-align: center
+    .fast-filter-content
+        background-color: $fiolet
+        padding: 10px 7px
+        p
+            margin: 0
+            font-size: 18px
+            margin-bottom: 7px 
+            
+.fast-filter-content
+    .form-select
+        width: 100%
+        margin: 2px 0
+        select
+            height: 40px
+            padding-top: 1px
+            background: #fff url(../img/arrow-small.png) no-repeat 98% 8px
+            border: 0
+            color: $main
+    .input-group
+        margin: 5px 0 0 0
+            
+input.send-fast-filter
+    color: $main
+    background-color: #FFEA00
+    -webkit-transition: .3s 
+    -moz-transition: .3s 
+    -ms-transition: .3s 
+    -o-transition: .3s 
+    transition: .3s
+    width: 100%
+    border: 0
+    text-align: center
+    padding: 3px 0
+    outline: none
+    font-size: 18px 
+    &:hover
+        background-color: #ECDA00
+        
+.article-list-descript
+    padding-bottom: 30px
+    position: relative
+    
+.reed-more
+    padding: 8px 86px
+    display: inline-block
+    border: 1px solid #ccc
+    background-color: #FFF
+    color: $main
+    position: absolute
+    font-size: 18px
+    margin-top: 5px
+    -webkit-transition: .3s 
+    -moz-transition: .3s 
+    -ms-transition: .3s 
+    -o-transition: .3s 
+    transition: .3s 
+    &:hover
+        color: $ak
+        background-color: #EEEEEE
+    
+.article-item
+    margin-bottom: 40px
+    
+.article-list-filter
+    margin-top: 13px
+    
+.nav-page
+    ul
+        margin: 0
+        padding: 0
+        list-style-type: none
+        text-align: center
+        li
+            display: inline-block
+            margin: 0 5px 
+            a
+                display: inline-block
+                height: 29px
+                width: 37px
+                background-image: url('../img/page.svg')
+                -webkit-background-size: cover 
+                -o-background-size: cover 
+                background-size: cover
+                color: #FFF
+                font-size: 18px
+                font-family: 'Intro black'
+                text-align: center
+                -webkit-transition: .3s 
+                -moz-transition: .3s 
+                -ms-transition: .3s 
+                -o-transition: .3s 
+                transition: .3s
+                &:hover
+                    background-image: url('../img/page-active.svg')
+            .active
+                background-image: url('../img/page-active.svg')
+        .spase  
+            a
+                color: #aaa
+                background: none
+                letter-spacing: -1px 
+                &:hover
+                    background: none
+                    
+
+    
+//end ARTICLE
+
+
+// start SLIDER-ABOUT
+.about-content
+    border: 1px solid #ccc
+    padding: 40px 15px 0 15px
+    position: relative
+    margin-top: 35px 
+    
+.about-h
+    background-color: $ak
+    color: #FFF
+    font-size: 26px
+    padding: 5px 20px
+    position: absolute
+    top: -20px
+    text-transform: uppercase 
+
+
+.owl-about
+    .owl-nav
+        .owl-prev
+            top: 102px
+        .owl-next
+            top: 102px
+            
+.slider-about
+    margin-top: -31px
+    position: relative
+    z-index: 1
+    margin-bottom: 20px 
+// end SLIDER-ABOUT
+
+
+// start owl-document
+.owl-document
+    img
+        max-width: 100%
+    .owl-nav 
+        display: block !important
+        .owl-prev
+            top: 105px
+        .owl-next
+            top: 105px
+// end owl-document
+
+// start REVIEWS
+.reviews
+    margin-top: 20px 
+    h2
+        color: $fiolet
+        text-align: center
+        font-size: 30px
+        font-family: 'Intro black'  
+// end REVIEWS
