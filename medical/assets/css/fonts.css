@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700&subset=cyrillic");
+@font-face {
+  font-family: "FuturaRoundBold";
+  src: url("../fonts/FuturaRoundBold/FuturaRoundBold.eot");
+  src: url("../fonts/FuturaRoundBold/FuturaRoundBold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaRoundBold/FuturaRoundBold.woff") format("woff"), url("../fonts/FuturaRoundBold/FuturaRoundBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }

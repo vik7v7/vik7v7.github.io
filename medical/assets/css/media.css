@@ -1,0 +1,194 @@
+@media only screen and (max-width: 1366px) {
+  .main-photo-bg {
+    background-position: 200px center; } }
+
+@media only screen and (max-width: 1200px) {
+  .portfolio-item-right {
+    margin: 80px 0; }
+    .portfolio-item-right .wrapper-text .text {
+      margin-top: 60px;
+      width: 415px; }
+      .portfolio-item-right .wrapper-text .text h3 {
+        font-size: 22px; }
+    .portfolio-item-right .owl-carousel .owl-item img {
+      float: left; }
+    .portfolio-item-right .owl-carousel .owl-dots {
+      text-align: left; }
+  .owl-portfolio-img {
+    width: 460px; }
+  ul.advantages-ul li {
+    width: 290px; }
+  ul.popup-gallery li {
+    width: 215px;
+    margin: 5px;
+    height: 160px; }
+  .work-bg-w {
+    height: 450px; }
+  .work-bg-g {
+    height: 450px; } }
+
+@media only screen and (max-width: 992px) {
+  #cssmenu {
+    display: none;
+    margin-top: 35px;
+    width: 100%;
+    position: relative;
+    z-index: 10; }
+    #cssmenu ul {
+      position: relative;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 0; }
+      #cssmenu ul li {
+        margin-left: 0;
+        width: 100%;
+        margin: 3px 0; }
+        #cssmenu ul li a {
+          padding: 6px 13px 4px 13px;
+          font-size: 16px; }
+          #cssmenu ul li a:hover {
+            transition: .3s; }
+  .owl-portfolio-img {
+    width: 100%;
+    margin-top: 0;
+    height: inherit; }
+  .portfolio-item-right .wrapper-img img {
+    width: 100%; }
+  .portfolio-item-right .wrapper-img {
+    width: 100%;
+    height: auto; }
+  .portfolio-item-right .wrapper-text {
+    height: auto;
+    width: 100%; }
+  .portfolio-item-right .wrapper-text .text {
+    margin: 30px;
+    width: auto;
+    float: inherit;
+    text-align: left; }
+  .portfolio-item-right {
+    float: left;
+    height: auto;
+    margin-top: 40px;
+    width: 100%; }
+  .about {
+    margin-top: 50px; }
+  .price-name {
+    width: 500px; }
+  .price-number {
+    width: 175px; }
+  ul.popup-gallery li {
+    width: 170px;
+    margin: 2px;
+    height: 130px; }
+  .work-bg-w {
+    height: 380px; }
+  .work-bg-g {
+    height: 380px; } }
+
+@media only screen and (max-width: 768px) {
+  .animated {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important; }
+  .wrapper-menu {
+    margin-top: -29px; }
+  .icon-menu {
+    margin-top: 0; }
+  .main-photo-bg {
+    background-position: 150px center; } }
+
+@media only screen and (max-width: 745px) {
+  .price-name {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px; }
+  .price-number {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px; }
+  .price-name article p {
+    margin-bottom: 0; } }
+
+@media only screen and (max-width: 660px) {
+  .intro-text {
+    width: 100%; }
+  .main-content {
+    margin-left: 0; }
+  .main-photo-bg {
+    background-position: 50px center; }
+  ul.popup-gallery li {
+    width: 150px;
+    margin: 2px;
+    height: 115px; }
+  .work-bg-w {
+    height: 345px; }
+  .work-bg-g {
+    height: 345px; } }
+
+@media only screen and (max-width: 600px) {
+  .portfolio-item-right {
+    margin: 60px 0;
+    margin-top: 10px; } }
+
+@media only screen and (max-width: 480px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    margin-top: 0;
+    line-height: 55px; }
+  ul.advantages-ul ul li {
+    margin: 34px 15px 0 15px; }
+  .work-bg-w {
+    height: 600px;
+    width: 100%; }
+  .work-bg-g {
+    display: none; } }
+
+@media only reen and (max-width: 360px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 42px; }
+  .phone-top {
+    margin-top: 30px; }
+  ul.advantages-ul li {
+    width: 256px; } }
+
+@media only screen and (min-width: 320px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 480px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 768px) {
+  .hidden {
+    display: none; } }
+
+@media only screen and (min-width: 992px) {
+  #cssmenu {
+    display: block !important; } }
+
+@media only screen and (min-width: 1200px) {
+  .hidden {
+    display: none; } }
