@@ -19,6 +19,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<meta property="og:title" content="Главная"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:image:url" content=""/>
+    <meta property="og:image:secure_url" content=""/>
+
 	<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="assets/libs/animate/animate.css">
 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css"/>
@@ -33,13 +40,16 @@
 
 	<header>
 			<!-- start nav -->
+			<meta itemprop="telephone" content="89254153880">
+	        <meta itemprop="address" content="Россия">
+	        <meta itemprop="name" content="meddoc.store">
 			<nav>
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-2">
-							<div class="logo">
+							<div class="logo" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
 								<a href="">
-									<img src="assets/img/logo.png" alt="">
+									<img src="assets/img/logo.png" alt="Лого meddoc.store" itemprop="image url">
 								</a>
 							</div>
 						</div>
@@ -51,11 +61,11 @@
 							<div id='cssmenu'>
 								<ul>
 									<li class="active"><a href='#'>Главная</a></li>	
-									<li><a href='#'>О нас</a></li>
-									<li><a href='#'>Цены</a></li>
-									<li><a href='#'>Наши работы</a></li>
-									<li><a href='#'>Акции</a></li>
-									<li><a href='#'>Оформить заявку</a></li>
+									<li><a href='#about'>О нас</a></li>
+									<li><a href='#price'>Цены</a></li>
+									<li><a href='#work'>Наши работы</a></li>
+									<li><a href='#sale'>Акции</a></li>
+									<li><a href='#buy'>Оформить заявку</a></li>
 								</ul>
 							</div>
 							</div>
@@ -73,7 +83,7 @@
 						<h1>Медицинские документы</h1>
 						<div class="intro-text"><p>Наша миссия - помочь вам купить медицинский сертификат специалиста и другие сопутствующие медицинские документы для трудоустройства или работы по специальности.</p></div>
 						<div class="clarfix"></div>
-						<a href="" class="button-y">Отправить заявку</a>
+						<a href="#buy" class="button-y">Отправить заявку</a>
 						<div class="phone-top">
 							<div class="phone-whatsap">
 								<img src="assets/img/ico-whatsap.png" alt=""> <p>
@@ -125,7 +135,7 @@
 	</header>
 
 	<!-- start about -->
-	<section class="about">
+	<section class="about" id="about">
 			<div class="portfolio-item-right">
 				<div class="wrapper-text">
 					<div class="text">
@@ -146,7 +156,7 @@
 	<!-- end about -->
 
 	<!-- start price -->
-	<sectopn class="price">
+	<sectopn class="price" id="price">
 		<div class="container">
 			<h2>Цены</h2>
 			<div class="wrapper-price">
@@ -232,7 +242,7 @@
 	<!-- end price -->
 
 	<!-- start our-work -->
-	<section class="our-work">
+	<section class="our-work" id="work">
 		<div class="our-work-content">
 			<div class="container">
 				<h2>Наши работы</h2>
@@ -304,15 +314,134 @@
 	</section>
 	<!-- end our-work -->
 
+	
+	<!-- start promoution -->
+	<section class="promoution" id="sale">
+		<div class="container">
+			<h2>Акции</h2>
+			<ul class="promoution-ul">
+				<li>
+					<div class="promoutio-img" style="background-image: url('assets/img/action-2.png');"><p class="promoution-price">25 000</p><p class="promoution-price-val">руб.</p></div>
+					<div class="promoutio-text">
+						<h3><span>Комплект 2в1:</span> Сертификат специалиста медицинский + Свидетельство о повышении квалификации</h3>
+					</div>
+					<a href="#action-detal-1" class="button-small">Подробнее</a>
+				</li>
+				<li>
+					<div class="promoutio-img" style="background-image: url('assets/img/action-1.png');"><p class="promoution-price">25 000</p><p class="promoution-price-val">руб.</p></div>
+					<div class="promoutio-text">
+						<h3><span>Комплект 2в1:</span> Сертификат специалиста медицинский + Свидетельство о повышении квалификации</h3>
+					</div>
+					<a href="#action-detal-2" class="button-small">Подробнее</a>
+				</li>
+				<li>
+					<div class="promoutio-img" style="background-image: url('assets/img/action-2.png');"><p class="promoution-price">25 000</p><p class="promoution-price-val">руб.</p></div>
+					<div class="promoutio-text">
+						<h3><span>Комплект 2в1:</span> Сертификат специалиста медицинский + Свидетельство о повышении квалификации</h3>
+					</div>
+					<a href="#action-detal-3" class="button-small">Подробнее</a>
+				</li>
+				<li>
+					<div class="promoutio-img" style="background-image: url('assets/img/action-1.png');"><p class="promoution-price">25 000</p><p class="promoution-price-val">руб.</p></div>
+					<div class="promoutio-text">
+						<h3><span>Комплект 2в1:</span> Сертификат специалиста медицинский + Свидетельство</h3>
+					</div>
+					<a href="#action-detal-4" class="button-small">Подробнее</a>
+				</li>
 
+			</ul>
+		</div>
+	</section>
+	<!-- end promoution -->
 
+	<footer>
+		<div class="bg-footer" id="buy"></div>
 
-	<br><br><br><br>
-<br><br>
+		<div class="container">
+			<div class="content-footer">
+				<div class="footer-form">
+		    		<form class="footer-form-z" id="form-number" action="mail.php" method="POST" name="contact">
+		    			<h3>Оформить заказ</h3>
+		    
+		    		    <div class="input-group">
+		    		      <input class="tour-book2" type="text" required="" placeholder="Ваше имя" name="nameclient"/>
+		    		    </div>
+		    
+		    		    <div class="input-group">
+		    		      <input class="tour-book2" type="text" required="" placeholder="Контактный телефон" name="phone"/>
+		    		    </div>
 
+		    		    <div class="input-group">
+		    		      <input class="tour-book2" type="text" required="" placeholder="Укажите из какого вы города" name="phone"/>
+		    		    </div>
+
+						<div class="input-group">
+			    		    <select name="">
+							    <option disabled>Выберете нужный вам документ</option>
+							    <option value="doc1">Документ 1</option>
+							    <option value="doc2">Документ 2</option>
+							    <option value="doc3">Документ 3</option>
+							</select>
+						</div>
+
+						<div class="input-group">
+			    		    <textarea rows="4" name="text" placeholder="Комментарии к заказу"></textarea>
+						</div>
+		    
+		    		    <div class="input-group" style="text-align: center;">
+		    		      <input class="tour_send2" id="send-mass" name="submit" type="submit" value="Отправить заявку"/>
+		    		    </div>
+		    
+		    		</form>
+		    	</div>
+
+		    	<div class="phone-top">
+		    		<div class="phone-whatsap">
+		    			<img src="assets/img/ico-whatsap.png" alt=""> <p>
+		    				<span>8 925</span> 415 38 80
+		    			</p>
+		    		</div>
+		    		<div class="phone-viber">
+		    			<img src="assets/img/ico-viber.png" alt=""> <p>
+		    				<span>8 925</span> 415 38 80
+		    			</p>
+		    		</div>
+		    	</div>
+
+	    	</div>
+
+		</div>
+
+	</footer>
 
 	<div class="loader">
 		<div class="loader_inner"></div>
+	</div>
+
+	<div class="hidden">
+		<div id="action-detal-1" class="action-detal mfp-with-anim mfp-hide">
+    		<h3>Lorem ipsum dolor sit amet</h3>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias.</p>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias.</p>
+    	</div>
+
+    	<div id="action-detal-2" class="action-detal mfp-with-anim mfp-hide">
+    		<h3>Lorem ipsum dolor sit amet</h3>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias.</p>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias.</p>
+    	</div>
+
+    	<div id="action-detal-3" class="action-detal mfp-with-anim mfp-hide">
+    		<h3>Lorem ipsum dolor sit amet</h3>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias.</p>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias.</p>
+    	</div>
+
+    	<div id="action-detal-4" class="action-detal mfp-with-anim mfp-hide">
+    		<h3>Lorem ipsum dolor sit amet</h3>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias.</p>
+    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quia provident ea totam corrupti dignissimos similique voluptatibus quod qui fuga? Necessitatibus, omnis accusamus sit! Veritatis accusamus, quam a fuga molestias.</p>
+    	</div>
 	</div>
 
 	<!--[if lt IE 9]>

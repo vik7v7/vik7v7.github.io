@@ -1,5 +1,31 @@
 $(function() {
 
+	$("a[href='#action-detal-1']").magnificPopup({
+		mainClass: 'my-mfp-zoom-in',
+		removalDelay: 300,
+		type: 'inline',
+	});
+	$("a[href='#action-detal-2']").magnificPopup({
+		mainClass: 'my-mfp-zoom-in',
+		removalDelay: 300,
+		type: 'inline',
+	});
+	$("a[href='#action-detal-3']").magnificPopup({
+		mainClass: 'my-mfp-zoom-in',
+		removalDelay: 300,
+		type: 'inline',
+	});
+	$("a[href='#action-detal-4']").magnificPopup({
+		mainClass: 'my-mfp-zoom-in',
+		removalDelay: 300,
+		type: 'inline',
+	});
+	$("a[href='#action-detal-5']").magnificPopup({
+		mainClass: 'my-mfp-zoom-in',
+		removalDelay: 300,
+		type: 'inline',
+	});
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
@@ -119,3 +145,21 @@ $(document).ready(function() {
         });
 });
 // END gallery
+
+// START scroll nav
+$(document).ready(function(){
+		$("nav").on("click","a", function (event) {
+			//отменяем стандартную обработку нажатия по ссылке
+			event.preventDefault();
+
+			//забираем идентификатор бока с атрибута href
+			var id  = $(this).attr('href'),
+
+			//узнаем высоту от начала страницы до блока на который ссылается якорь
+				top = $(id).offset().top;
+			
+			//анимируем переход на расстояние - top за 1500 мс
+			$('body,html').animate({scrollTop: top}, 1500);
+		});
+	});
+// END scroll nav
