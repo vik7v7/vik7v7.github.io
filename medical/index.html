@@ -27,11 +27,7 @@
     <meta property="og:image:secure_url" content=""/>
 
 	<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="assets/libs/animate/animate.css">
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css?ver=1.0.0">
 
-	<link rel="stylesheet" href="assets/css/fonts.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/media.css">
 </head>
@@ -453,7 +449,18 @@
 
 	<script src="assets/libs/modernizr/modernizr.js"></script>
 
-	<script src="assets/libs/jquery/jquery-1.11.2.min.js"></script>
+	<script
+	  src="https://code.jquery.com/jquery-1.11.2.min.js"
+	  integrity="sha256-Ls0pXSlb7AYs7evhd+VLnWsZ/AqEHcXBeMZUycz/CcA="
+	  crossorigin="anonymous"></script>
+	
+	<script>
+	    $(document).ready(function() {
+	        $("head").append("<link rel='stylesheet' href='assets/libs/animate/animate.css'> <link rel='stylesheet' href='assets/css/fonts.css'> <link rel='stylesheet' href='assets/css/owl.carousel.min.css'/> <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css?ver=1.0.0'>");
+	    }); 
+	</script>
+
+
 	<script src="assets/libs/waypoints/waypoints.min.js"></script>
 	<script src="assets/libs/animate/animate-css.js"></script>
 	<script src="assets/libs/plugins-scroll/plugins-scroll.js"></script>
