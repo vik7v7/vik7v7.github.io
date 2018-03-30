@@ -167,7 +167,11 @@
   .footer-form {
     margin-top: 25px; }
     .footer-form h3 {
-      font-size: 28px; } }
+      font-size: 28px; }
+  .content {
+    margin-top: 25px; }
+    .content h1 {
+      line-height: 45px; } }
 
 @media only reen and (max-width: 360px) {
   .hidden {
@@ -184,7 +188,9 @@
     width: 137px;
     height: 100px; }
   .work-bg-w {
-    height: 540px; } }
+    height: 540px; }
+  .bg-footer {
+    height: 825px; } }
 
 @media only screen and (min-width: 320px) {
   .hidden {

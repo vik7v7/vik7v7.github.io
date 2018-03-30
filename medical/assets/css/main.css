@@ -1,3 +1,19 @@
+::selection {
+  background: #ccc; }
+
+::-moz-selection {
+  background: #ccc; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background-color: #e6e6e6; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ffce3b; }
+
 *::-webkit-input-placeholder, *:-moz-placeholder, *::-moz-placeholder, *:-ms-input-placeholder {
   color: #666;
   opacity: 1; }
@@ -65,6 +81,21 @@ h2 {
   font-family: "FuturaRoundBold";
   text-transform: uppercase; }
 
+.content {
+  margin-top: 50px; }
+  .content h1 {
+    font-size: 30px;
+    color: #84c352;
+    text-align: center;
+    text-transform: uppercase; }
+  .content h2 {
+    color: #ffce3b;
+    font-size: 24px;
+    text-transform: none;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    line-height: 35px; }
+
 .button-y {
   color: #FFF;
   background-color: #ffce3b;
@@ -80,6 +111,23 @@ h2 {
   transition: .3s; }
   .button-y:hover {
     background-color: #f4c330;
+    color: #fff; }
+
+.button-g {
+  color: #FFF;
+  background-color: #84c352;
+  padding: 15px 30px 12px 30px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  display: inline-block;
+  font-style: italic;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .button-g:hover {
+    background-color: #75ac4a;
     color: #fff; }
 
 nav {
@@ -211,7 +259,8 @@ nav {
 
 .phone-viber {
   display: inline-block;
-  width: 230px; }
+  width: 230px;
+  margin-right: 30px; }
   .phone-viber img {
     float: left;
     margin-right: 20px; }
@@ -223,6 +272,22 @@ nav {
     letter-spacing: -0.2; }
     .phone-viber p span {
       color: #7b519c; }
+
+.phone-mail {
+  display: inline-block;
+  width: 230px; }
+  .phone-mail img {
+    float: left;
+    margin-right: 20px; }
+  .phone-mail p {
+    float: left;
+    font-size: 20px;
+    font-family: "FuturaRoundBold";
+    margin-top: 7px;
+    letter-spacing: -0.2;
+    color: #242424; }
+    .phone-mail p span {
+      color: #ef4844; }
 
 .wrapper-advantages {
   background-color: #FFF;
@@ -287,6 +352,7 @@ ul.advantages-ul {
 .owl-portfolio-img {
   width: 555px;
   height: 390px;
+  overflow: hidden;
   float: right;
   margin-top: 50px; }
   .owl-portfolio-img .owl-stage-outer {
@@ -335,6 +401,8 @@ ul.advantages-ul {
   text-align: left;
   float: left;
   margin: 0 10px; }
+  .price-name a {
+    color: #444444; }
   .price-name label {
     padding: 14px 30px 11px 30px;
     position: relative;
@@ -356,32 +424,7 @@ ul.advantages-ul {
     height: 24px;
     right: 20px;
     top: 15px;
-    background: transparent url(../img/arrow_down.png) no-repeat center center; }
-  .price-name input {
-    display: none; }
-    .price-name input:checked + label:after {
-      content: '';
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      right: 20px;
-      top: 14px;
-      background: transparent url(../img/arrow_down.png) no-repeat center center;
-      background-image: url(../img/arrow_up.png); }
-  .price-name article {
-    display: none;
-    position: relative;
-    z-index: 10; }
-    .price-name article p {
-      font-style: italic;
-      color: #717171;
-      line-height: 23px;
-      font-size: 14px;
-      padding: 5px 20px 5px 46px; }
-      .price-name article p span {
-        color: #ffce3b; }
-  .price-name input:checked ~ article.ac-small {
-    display: block; }
+    background: transparent url(../img/arrow_right.png) no-repeat center center; }
 
 .price-number {
   float: right;
@@ -649,6 +692,24 @@ footer {
     .footer-form-z .tour_send2:hover {
       background-color: #6fa247; }
 
+.fotorama {
+  margin-top: 20px; }
+
+.product-price p {
+  font-size: 36px;
+  color: #ffce3b;
+  font-family: "FuturaRoundBold";
+  margin-bottom: 0; }
+  .product-price p span {
+    font-size: 24px;
+    color: #444444; }
+
+.product-descript {
+  margin-top: -5px;
+  margin-bottom: 20px; }
+  .product-descript p {
+    font-style: italic; }
+
 .action-detal {
   background: #ccc;
   position: relative;
@@ -674,3 +735,45 @@ footer {
 
 .arcticmodal-container {
   z-index: 9999; }
+
+.korpus {
+  margin-top: 35px;
+  text-align: center; }
+  .korpus > div, .korpus > input {
+    display: none; }
+  .korpus label.korpus-category {
+    color: #ffce3b;
+    border: 2px solid #ffce3b;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    font-style: italic;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    padding: 10px 30px 8px 30px;
+    outline: none;
+    cursor: pointer;
+    margin: 5px; }
+    .korpus label.korpus-category:hover {
+      background-color: #ffce3b;
+      color: #FFF; }
+  .korpus input[type="radio"]:checked + label {
+    background-color: #ffce3b;
+    color: #FFF; }
+  .korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1), .korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2), .korpus > input:nth-of-type(3):checked ~ div:nth-of-type(3), .korpus > input:nth-of-type(4):checked ~ div:nth-of-type(4), .korpus > input:nth-of-type(5):checked ~ div:nth-of-type(5), .korpus > input:nth-of-type(6):checked ~ div:nth-of-type(6), .korpus > input:nth-of-type(7):checked ~ div:nth-of-type(7), .korpus > input:nth-of-type(8):checked ~ div:nth-of-type(8), .korpus > input:nth-of-type(9):checked ~ div:nth-of-type(9) {
+    margin-top: -22px;
+    display: block;
+    padding: 20px 10px;
+    margin-top: 10px; }
+    .korpus > input:nth-of-type(1):checked ~ div:nth-of-type(1) p, .korpus > input:nth-of-type(2):checked ~ div:nth-of-type(2) p, .korpus > input:nth-of-type(3):checked ~ div:nth-of-type(3) p, .korpus > input:nth-of-type(4):checked ~ div:nth-of-type(4) p, .korpus > input:nth-of-type(5):checked ~ div:nth-of-type(5) p, .korpus > input:nth-of-type(6):checked ~ div:nth-of-type(6) p, .korpus > input:nth-of-type(7):checked ~ div:nth-of-type(7) p, .korpus > input:nth-of-type(8):checked ~ div:nth-of-type(8) p, .korpus > input:nth-of-type(9):checked ~ div:nth-of-type(9) p {
+      font-size: 18px;
+      line-height: 23px; }
+  .korpus label.korpus-category {
+    display: inline-block; }
+
+.content-text img {
+  max-width: 100%;
+  margin-bottom: 10px;
+  margin-right: 15px; }

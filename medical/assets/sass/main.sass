@@ -2,6 +2,23 @@ $main: #444444
 $akg: #84c352
 $aky: #ffce3b
 $fiolet: #7b519c
+$red: #ef4844
+
+::selection
+    background: #ccc
+
+::-moz-selection
+    background: #ccc
+    
+::-webkit-scrollbar
+  width: 10px
+
+::-webkit-scrollbar-track
+  background-color: #e6e6e6
+
+::-webkit-scrollbar-thumb
+  border-radius: 10px
+  background-color: $aky
 
 *
     &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
@@ -73,7 +90,22 @@ h1
 h2
     font-size: 28px
     font-family: "FuturaRoundBold"
-    text-transform: uppercase 
+    text-transform: uppercase
+    
+.content
+    margin-top: 50px 
+    h1
+        font-size: 30px
+        color: $akg
+        text-align: center
+        text-transform: uppercase
+    h2
+        color: $aky
+        font-size: 24px
+        text-transform: none
+        margin-top: 35px
+        margin-bottom: 15px
+        line-height: 35px 
     
 .button-y
     color: #FFF
@@ -90,6 +122,23 @@ h2
     transition: .3s
     &:hover
         background-color: #f4c330
+        color: #fff
+        
+.button-g
+    color: #FFF
+    background-color: $akg
+    padding: 15px 30px 12px 30px
+    -webkit-border-radius: 100px
+    border-radius: 100px
+    display: inline-block
+    font-style: italic
+    -webkit-transition: .3s 
+    -moz-transition: .3s 
+    -ms-transition: .3s 
+    -o-transition: .3s 
+    transition: .3s
+    &:hover
+        background-color: #75ac4a
         color: #fff  
     
 nav
@@ -229,6 +278,7 @@ nav
 .phone-viber
     display: inline-block
     width: 230px
+    margin-right: 30px
     img
         float: left
         margin-right: 20px 
@@ -240,6 +290,22 @@ nav
         letter-spacing: -0.2
         span
             color: $fiolet
+
+.phone-mail
+    display: inline-block
+    width: 230px
+    img
+        float: left
+        margin-right: 20px 
+    p
+        float: left
+        font-size: 20px
+        font-family: "FuturaRoundBold"
+        margin-top: 7px 
+        letter-spacing: -0.2
+        color: #242424
+        span
+            color: $red
             
             
 //end main-photo
@@ -313,6 +379,7 @@ ul.advantages-ul
 .owl-portfolio-img
     width: 555px
     height: 390px
+    overflow: hidden
     float: right
     margin-top: 50px
     .owl-stage-outer
@@ -359,6 +426,8 @@ ul.advantages-ul
     margin: 8px 0 
         
 .price-name
+  a
+    color: $main 
   width: 590px
   margin: 10px auto 30px auto
   text-align: left
@@ -385,33 +454,7 @@ ul.advantages-ul
     height: 24px
     right: 20px
     top: 15px
-    background: transparent url(../img/arrow_down.png) no-repeat center center
-  input
-    &:checked + label:after
-      content: ''
-      position: absolute
-      width: 24px
-      height: 24px
-      right: 20px
-      top: 14px
-      background: transparent url(../img/arrow_down.png) no-repeat center center
-      background-image: url(../img/arrow_up.png)
-    display: none
-  article
-    display: none 
-    position: relative
-    z-index: 10
-    p
-      font-style: italic
-      color: #717171
-      line-height: 23px
-      font-size: 14px
-      padding: 5px 20px 5px 46px
-      span
-        color: $aky 
-  input:checked ~ article
-    &.ac-small
-      display: block 
+    background: transparent url(../img/arrow_right.png) no-repeat center center
 
 .price-number
     float: right
@@ -697,6 +740,28 @@ footer
 //end footer
 
 
+//product-page    
+.fotorama
+    margin-top: 20px
+    
+.product-price
+    p
+        font-size: 36px
+        color: $aky
+        font-family: "FuturaRoundBold"
+        margin-bottom: 0
+        span
+            font-size: 24px
+            color: $main
+
+.product-descript
+    margin-top: -5px
+    margin-bottom: 20px  
+    p
+        font-style: italic
+         
+
+
 .action-detal
     background: #ccc
     position: relative
@@ -722,3 +787,50 @@ footer
 
 .arcticmodal-container
     z-index: 9999
+    
+
+.korpus
+  margin-top: 35px
+  text-align: center 
+  >
+    div, input
+      display: none
+  label.korpus-category
+    color: $aky
+    border: 2px solid $aky
+    -webkit-border-radius: 100px 
+    border-radius: 100px
+    font-style: italic
+    -webkit-transition: .3s 
+    -moz-transition: .3s 
+    -ms-transition: .3s 
+    -o-transition: .3s 
+    transition: .3s
+    padding: 10px 30px 8px 30px
+    outline: none
+    cursor: pointer
+    margin: 5px 
+    &:hover
+        background-color: $aky
+        color: #FFF    
+  input[type="radio"]:checked + label
+    background-color: $aky
+    color: #FFF 
+  > input
+    &:nth-of-type(1):checked ~ div:nth-of-type(1), &:nth-of-type(2):checked ~ div:nth-of-type(2), &:nth-of-type(3):checked ~ div:nth-of-type(3), &:nth-of-type(4):checked ~ div:nth-of-type(4), &:nth-of-type(5):checked ~ div:nth-of-type(5), &:nth-of-type(6):checked ~ div:nth-of-type(6), &:nth-of-type(7):checked ~ div:nth-of-type(7), &:nth-of-type(8):checked ~ div:nth-of-type(8), &:nth-of-type(9):checked ~ div:nth-of-type(9)
+      margin-top: -22px
+      display: block
+      padding: 20px 10px
+      margin-top: 10px 
+      p
+        font-size: 18px
+        line-height: 23px 
+  label.korpus-category
+    display: inline-block
+    
+
+.content-text
+    img
+        max-width: 100%
+        margin-bottom: 10px
+        margin-right: 15px  
